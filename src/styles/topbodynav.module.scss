@@ -1,0 +1,31 @@
+.wrapper {
+  width: 100vw;
+  height: 59px;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: right;
+  background-color: blue;
+  opacity: 90%;
+  z-index: 0;
+}
+
+.container{
+  align-self: center;
+  margin-right: 2.3vw;
+}
+
+.patron {
+  align-self: center;
+  margin-right: 6.2vw;
+  svg{
+    text{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+    }
+  }
+}
+
+.a, .b {
+  fill: black;
+}

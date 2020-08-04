@@ -1,0 +1,202 @@
+
+.wrapper {
+  width: auto;
+  height: auto;
+  margin: 0 19.4vw;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    width: 100%;
+    height: auto;
+    background-color: #EF4423;
+
+    .container{
+      display: flex;
+      flex-direction: row;
+      margin: 6.4vh 2.6vw;
+
+      .logo {
+        width: 15.2vw;
+        height: auto;
+        margin: 0 auto 0 0;
+      }
+
+      .stairs {
+        width: 7vw;
+        height: auto;
+        margin: 0 0 0 auto;
+        align-self: flex-end;
+      }
+      
+    }
+  }
+
+  form {
+    margin: 2.7vw;
+    display: flex;
+    flex-direction: column;
+
+    .description {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 8.6vh;
+
+      div {
+        .textWithLines {
+          h4 {
+            white-space: nowrap;
+          }
+        }
+      }
+
+      p {
+        width: auto;
+        margin-left: 4.8vw;
+      }
+
+      p:first-child {
+        margin-top: 0;
+      }
+    }
+  
+    .input {
+  
+      width: auto;
+      height: 4vh;
+      margin-bottom: 4.62vh;
+      display: flex;
+      flex-direction: row;
+  
+      p {
+        white-space: nowrap;
+        line-height: 22px;
+        margin: auto 3.8vw auto 0;
+      }
+  
+      input {
+        width: 100%;
+        margin: 0 0 0 auto;
+        padding-left: 23px;
+        border-radius: 50px;
+        font-family: inherit;
+        font-size: 16px;
+      }
+  
+      input:focus {
+        outline: none;
+        border-color:#EF4423;
+        box-shadow:0 0 5px #EF4423;
+      }
+
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+
+      /* Firefox */
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+  
+    }
+    
+  
+    .required {
+      input {
+        border: solid 1px #EF4423;
+      }
+    }
+  
+    .optional {
+      input {
+        border: solid 1px #8F8F8F;
+      }
+    }
+  
+    .column {
+      height: 100%;
+      flex-direction: column;
+  
+      p {
+        height: 4vh;
+      }
+  
+      input {
+        width: auto;
+        margin: 0;
+        height: 4vh;
+        padding-left: 23px;
+      }
+  
+      input::placeholder {
+        padding-left: 20px;
+      }
+    }
+  
+    .square {
+  
+      textarea {
+        width: auto;
+        height: 13vh;
+        display: inline;
+        margin: 0;
+        padding: 23px;
+        border: solid 1px #EF4423;
+        resize: none;
+        font-family: inherit;
+        font-size: 16px;
+      }
+  
+      textarea::placeholder {
+        padding: 23px 0 0 23px;
+        vertical-align: top;
+        display: inline;
+      }
+  
+      textarea:focus {
+        outline: none;
+        border-color:#EF4423;
+        box-shadow:0 0 5px #EF4423;
+      }
+  
+      
+    }
+  
+    .line {
+      width: 100%;
+      height: 3px;
+      background-color: #EF4423;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      button {
+        width: 10.7vw;
+        margin: 4.6vh 0 0 2vw;  
+      }
+  
+      button:hover {
+        color: #EF4423;
+      }
+
+    }
+    
+  }
+  
+}
+
+.textWithLines {
+  width: auto;
+  height: auto;
+  padding: 1vw 0 1vw 0;
+  display: inline-block; 
+  font-weight: 600;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+

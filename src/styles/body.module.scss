@@ -1,0 +1,430 @@
+
+//BODY WRAPPER... 
+.wrapper {
+  width: 100vw;
+  height: auto;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.body {
+  width: 50vw;
+  height: 100%;
+  margin-left: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.textWithLines {
+  width: auto;
+  height: auto;
+  padding: 1vw 0 1vw 0;
+  display: inline-block; 
+  font-weight: 600;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.textWithLinesRedOut {
+  width: 100%;
+  padding: 1vw 0 1vw 0;
+  display: inline-block; 
+  border-top: 1.5pt solid #EF4423;
+  border-bottom: 1.5pt solid #EF4423;
+}
+
+.textWithLinesRedIn {
+  width: 100%;
+  padding: 1vw 0 1vw 0;
+  margin: 1vw 0 1vw 0;
+  display: inline-block; 
+  border-top: 1.5pt solid #EF4423;
+  border-bottom: 1.5pt solid #EF4423;
+}
+
+//DIVIDERS STYLE ...
+
+.claimingTheNow {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  z-index: 9999;
+}
+
+
+.TheNowImg {
+  width: 60.6vw;
+  height: auto;
+ 
+}
+
+.TheNowSVG {
+  width: 39.9vw;
+  height: auto;
+  z-index: 7;
+
+}
+
+// SECTION STYLE ...
+
+// ____________ EVENTS ____________
+
+.eventsanchor {
+  margin-bottom: 5.4vh;
+}
+
+.events {
+  width: 100%;
+  height: auto;
+  padding-left: 3.5vw;
+  display: flex;
+  flex-direction: column;
+  column-gap: 1.6vw;
+
+  h7 {
+    width: 32.3vw;
+    margin: 10.2vh 0 0  0;
+    font-weight: 100;
+  }
+
+  .video {
+    width: auto;
+    height: 55vh;
+    margin: 4.5vh 0 9.4vh 0;
+
+    iframe {
+      width: 50vw;
+      height: 100%;
+    } 
+    } 
+  
+  h1 {
+    transform: translateX(-0.8vw);
+    line-height: 138px;
+  }
+
+  
+  h3 {
+      width: auto;
+      height: auto;
+      margin: 9.4vh 0 13.8vh 0;
+  }  
+       
+}
+
+// ____________ WHAT'S ON ____________
+
+.whatsON {
+  height: auto;
+  padding-left: 3.5vw;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin-bottom: 24px;
+  }
+
+  .on {
+   margin-right: 6.25vw;
+   display: flex;
+   flex-direction: row;
+   column-gap: 5.1vw;
+
+  .textWithLines {
+    margin-top: 1.9vh;
+    h4 {
+      margin: 0;
+    }
+  }
+
+  .column1 {
+    p {
+      width: 22.8vw;
+    }
+  }
+
+  .column2 {
+    p {
+      width: 22.8vw;
+    }
+  }
+
+ }
+}
+
+// ____________ STREAM ____________
+
+.stream {
+  height: auto;
+  padding: 10.2vh 0 0 3.5vw;
+  display: flex;
+  flex-direction: column;
+
+  .video {
+    width: 50.7vw;
+    height: auto; 
+    margin:  33px 0 0 0; 
+  }
+
+  .streaminfo {
+    width: 41.9vw;
+    margin: 0 0 12.2vh 9.2vw;
+
+    .time {
+      font-size: calc( 21px + 1.1vw);
+      margin-top: 4.4vh;
+      white-space: nowrap;
+    }
+
+    .free {
+      p:after {
+        content: "FREE";
+        margin-left: 0.4vw;
+        font-weight: 100;
+      }
+    }
+  
+    .streambtn {
+      margin: 4.4vh 0 11.6vh 0;
+    }
+  
+    button:first-child {
+      margin-right: 2.6vw;
+    }
+  
+    .buttonW {
+      margin-top: 3.7vh;
+      button {
+        width: 250px;
+        
+      }
+    }
+
+    .streamtxt {
+      p {
+        margin-bottom: 3.1vh;
+      }
+    }
+    
+    .textWithLines {
+      p {
+        margin: 0;
+      }
+    }
+  
+    .seemore {
+      margin-top: 12.3vh;
+      display: flex;
+      flex-direction: row;
+  
+      .textWithLines {
+        margin-bottom: 2.4vh;
+        p {
+          width: 81px;
+          margin: 0;
+        }
+      }
+  
+      p {
+        margin: 0 0 0 3.2vw;
+      }
+  
+    }
+    .streambtnCataloge {
+      margin-left: 7.5vw;
+    }
+    
+  }
+
+}
+
+
+// ____________ FEATURED ____________
+
+.featuredanchor {
+  margin-bottom: 4.4vh;
+}
+
+.featured {  
+  width: 50.7vw;
+  height: auto;
+  padding-left: 3.5vw;
+  display: flex;
+  flex-direction: column;
+  margin-right: 6vw;
+
+  .title {   
+    display: flex;
+    flex-direction: row;
+    column-gap: 12.5vw;
+
+    h4 {
+      writing-mode: vertical-rl;
+      margin-top: 5.7vh;
+      font-weight: 600;
+    }
+  }
+
+  h3 {
+    font-weight: 400;
+    margin-bottom: 6.9vh;
+  }
+}
+
+// ____________ CALLOUT ____________
+
+.calloutanchor {
+
+}
+
+.callout {
+  width: 50.7vw;
+  height: auto;
+  padding-left: 3.5vw;
+  display: flex;
+  flex-direction: column;
+
+  .callouttxt {
+
+    h3 {
+      line-height: 35px;
+    }
+  }
+
+  .preferenceto {
+    padding: 0 0 0 9.3vw;
+    
+    h2 {
+      margin: 12.7vh 0 2.9vh 0;
+    }
+  }
+
+  .howtoapply {
+    margin: 10vh 0 10vh 0;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin: 3vh 0 4.6vh 0;
+    }
+
+    button {
+      width: 180px;
+    }
+  }
+
+}
+
+// ____________ ABOUT ____________
+
+.about {
+  width: 50.7vw;
+  height: auto;
+  padding: 0 6.2vw 0 3.5vw;
+
+  .abouttxt {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5.1vw;
+    margin: 10vw 0 8.3vh 0;
+
+  }
+
+  .team {
+    width: auto;
+    height: auto;
+    margin: 6.2vh 0 6.2vh 0;
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(3, 15.5vw);
+    column-gap: 2vw;
+    row-gap: 7vh;
+    
+    div {
+      p:first-of-type {
+        font-weight: 600;
+      }
+    }
+    
+
+  }
+}
+
+
+// ____________ SUPPORT ____________
+
+.support {
+  height: auto;
+  padding: 0 6.2vw 0 3.5vw;
+
+  h3 {
+    line-height: 35px;
+  }
+  
+  .supportbtn {
+    height: auto;
+    margin: 3.8vh 0 14.3vh 0;
+    display: flex;
+    flex-direction: row;
+
+    form {
+      input {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    button:first-child {
+      margin-right: 3.2vw;
+    }
+    
+  }
+
+  .powered {
+    margin: 5.5vh 0 11.3vh 0;
+    width: auto;
+    height: 49vh;
+    display: flex;
+    flex-direction: column;
+   
+
+    .poweredrow01 {
+      display: flex;
+      flex-direction: row;
+      // column-gap: 4.58vw;
+      // grid-column-gap: 4.58vw;    
+      margin-bottom: 6.4vh;
+
+      svg:first-child {
+        margin-right: 4.58vw;
+      }
+    }
+    .poweredrow02 {
+      display: flex;
+      flex-direction: row;
+      // column-gap: 5.6vw;
+      // grid-column-gap: 5.6vw;
+      margin-bottom: 6.4vh;
+
+      svg + svg {
+        margin-left: 5.6vw;
+      }
+    }
+    .poweredrow03 {
+      display: flex;
+      flex-direction: row;
+      // column-gap: 7.6vw;
+      // grid-column-gap: 7.6vw;
+      margin-bottom: 6.4vh;
+
+      svg + svg {
+        margin-left: 7.6vw;
+      }
+    }
+
+
+  }
+
+}
