@@ -73,7 +73,7 @@
 // ____________ EVENTS ____________
 
 .eventsanchor {
-  margin-bottom: 5.4vh;
+  // margin-bottom: 5.4vh;
 }
 
 .events {
@@ -82,35 +82,37 @@
   padding-left: 3.5vw;
   display: flex;
   flex-direction: column;
-  column-gap: 1.6vw;
+  // column-gap: 1.6vw;
 
   h7 {
-    width: 32.3vw;
-    margin: 10.2vh 0 0  0;
+    width: 589px;
+    margin: 15.8vh 0 0  0;
     font-weight: 100;
+    text-overflow: ellipsis;
   }
 
   .video {
     width: auto;
-    height: 55vh;
-    margin: 4.5vh 0 9.4vh 0;
+    // height: 55vh;
+    margin: 4.5vh 0 0 0; 
 
-    iframe {
-      width: 50vw;
-      height: 100%;
-    } 
+    // iframe {
+    //   width: 50vw;
+    //   height: 100%;
+    // } 
     } 
   
   h1 {
     transform: translateX(-0.8vw);
     line-height: 138px;
+    margin: 9.2vh 0 4.6vh 0;
   }
 
   
   h3 {
       width: auto;
       height: auto;
-      margin: 9.4vh 0 13.8vh 0;
+      margin-bottom: 15.7vh;
   }  
        
 }
@@ -118,6 +120,7 @@
 // ____________ WHAT'S ON ____________
 
 .whatsON {
+  width: 100%;
   height: auto;
   padding-left: 3.5vw;
   display: flex;
@@ -128,7 +131,7 @@
   }
 
   .on {
-   margin-right: 6.25vw;
+  //  margin-right: 6.25vw;
    display: flex;
    flex-direction: row;
    column-gap: 5.1vw;
@@ -142,13 +145,13 @@
 
   .column1 {
     p {
-      width: 22.8vw;
+      width: auto;
     }
   }
 
   .column2 {
     p {
-      width: 22.8vw;
+      width: auto;
     }
   }
 
@@ -158,6 +161,7 @@
 // ____________ STREAM ____________
 
 .stream {
+  width: 100%;
   height: auto;
   padding: 10.2vh 0 0 3.5vw;
   display: flex;
@@ -171,7 +175,7 @@
 
   .streaminfo {
     width: 41.9vw;
-    margin: 0 0 12.2vh 9.2vw;
+    margin: 0 0 0 9.2vw;
 
     .time {
       font-size: calc( 21px + 1.1vw);
@@ -180,9 +184,12 @@
     }
 
     .free {
+      p {
+        transform: translateY(-5px);
+      }
       p:after {
         content: "FREE";
-        margin-left: 0.4vw;
+        margin-left: 10px;
         font-weight: 100;
       }
     }
@@ -192,7 +199,7 @@
     }
   
     button:first-child {
-      margin-right: 2.6vw;
+      margin-right: 1.5vw;
     }
   
     .buttonW {
@@ -244,26 +251,30 @@
 
 // ____________ FEATURED ____________
 
-.featuredanchor {
-  margin-bottom: 4.4vh;
-}
+
 
 .featured {  
-  width: 50.7vw;
+  width: 100%;
   height: auto;
   padding-left: 3.5vw;
   display: flex;
   flex-direction: column;
   margin-right: 6vw;
 
+  .featuredanchor {
+    margin-bottom: 4.4vh;
+  }
+  
   .title {   
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
-    column-gap: 12.5vw;
-
+    justify-content: space-between;
+  
     h4 {
       writing-mode: vertical-rl;
-      margin-top: 5.7vh;
+      margin: 0 0 0 auto;
       font-weight: 600;
     }
   }
@@ -281,7 +292,7 @@
 }
 
 .callout {
-  width: 50.7vw;
+  width: 100%;
   height: auto;
   padding-left: 3.5vw;
   display: flex;
@@ -321,14 +332,14 @@
 // ____________ ABOUT ____________
 
 .about {
-  width: 50.7vw;
+  width: 100%;
   height: auto;
   padding: 0 6.2vw 0 3.5vw;
 
   .abouttxt {
     display: flex;
     flex-direction: row;
-    column-gap: 5.1vw;
+    // column-gap: 5.1vw;
     margin: 10vw 0 8.3vh 0;
 
   }
@@ -336,17 +347,17 @@
   .team {
     width: auto;
     height: auto;
-    margin: 6.2vh 0 6.2vh 0;
+    margin: 6.2vh 0;
     display: grid;
     grid-template: repeat(2, auto) / repeat(3, 15.5vw);
     column-gap: 2vw;
     row-gap: 7vh;
     
-    div {
-      p:first-of-type {
-        font-weight: 600;
-      }
-    }
+    // div {
+    //   p:first-of-type {
+    //     font-weight: 600;
+    //   }
+    // }
     
 
   }
@@ -356,6 +367,7 @@
 // ____________ SUPPORT ____________
 
 .support {
+  width: 100%;
   height: auto;
   padding: 0 6.2vw 0 3.5vw;
 
@@ -365,7 +377,7 @@
   
   .supportbtn {
     height: auto;
-    margin: 3.8vh 0 14.3vh 0;
+    margin: 3.8vh 0 0 0;
     display: flex;
     flex-direction: row;
 
@@ -382,49 +394,485 @@
     
   }
 
-  .powered {
-    margin: 5.5vh 0 11.3vh 0;
-    width: auto;
-    height: 49vh;
-    display: flex;
-    flex-direction: column;
-   
+}
 
-    .poweredrow01 {
-      display: flex;
-      flex-direction: row;
-      // column-gap: 4.58vw;
-      // grid-column-gap: 4.58vw;    
-      margin-bottom: 6.4vh;
+// BREAKPOINTS ... 
 
-      svg:first-child {
-        margin-right: 4.58vw;
-      }
-    }
-    .poweredrow02 {
-      display: flex;
-      flex-direction: row;
-      // column-gap: 5.6vw;
-      // grid-column-gap: 5.6vw;
-      margin-bottom: 6.4vh;
+ @media only screen and (max-width: 1024px) {
+   .events {
+    h3 {
+      margin-bottom: 13vh;
+  } 
+   }
 
-      svg + svg {
-        margin-left: 5.6vw;
-      }
-    }
-    .poweredrow03 {
-      display: flex;
-      flex-direction: row;
-      // column-gap: 7.6vw;
-      // grid-column-gap: 7.6vw;
-      margin-bottom: 6.4vh;
+  .whatsON {
 
-      svg + svg {
-        margin-left: 7.6vw;
+    .on {
+     flex-direction: column;
+     
+    .textWithLines {
+      margin: 3.9vh 0;
+      h4 {
+        margin: 0;
       }
     }
 
+    .column1 {
+      margin-bottom: 9.1vh;
+      p {
+        width: 100%;
+      }
+    }
+  
+    .column2 {
+      margin-bottom: 13vh;
+      p {
+        width: 100%;
+      }
+    }
+   }
+  }
 
+  //STREAM ...
+  .stream {
+    padding: 0 0 0 3.5vw;
+
+    .streaminfo {
+      width: auto;
+      margin: 0;
+      .time {
+        font-size: calc( 15px + 1.2vw);
+        white-space: normal;
+      }
+
+      .streambtn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 4.4vh 0 13vh 0;
+  
+        a {
+          margin: 0;
+          button {
+            white-space: nowrap;
+          }
+        }
+      }
+
+      .streamtxt {
+        margin-bottom: 13vh;
+        p:first-of-type {
+          margin-bottom: 13vh;
+        }
+      }
+      
+    }
+  }
+
+  //FEATURED ...
+    .featured {
+      .title {
+        width: auto;
+        margin-right: 0;
+        justify-content: space-between;
+        h1 {
+          font-size: 112px;
+        }
+        h4 {
+          text-align: center;
+          margin: 1.5vh 0 0 2vw;
+        }
+      
+      }
+    }
+    
+  //CALLOUT ...
+  .callout {
+    h1{
+      margin: 13vh 0 6.5vh 0;
+    }
+
+    .preferenceto {
+      padding-left: 0;
+    }  
+
+    .textWithLinesRedOut {
+      h3 {
+        // margin: 2.9vh 0;
+        line-height: 40px;
+      }
+    }
+    .howtoapply {
+      margin: 13vh 0;
+      p {
+        margin-bottom: 0;
+        line-height: 37px;
+      }
+    }
+
+    button {
+      margin-top: 4.4vh;
+    }
+  }  
+
+  //ABOUT ...
+  .about {
+    margin-bottom: 0;
+    h1 {
+      margin-top: 13vh;
+    }
+    .abouttxt {
+      flex-direction: column;
+      margin-top: 6.5vh;
+
+    }
+
+    .abouttxt1 {
+        margin-bottom: 13vh;
+    }
+
+    .abouttxt2 {
+        margin-bottom: 13vh;
+    }
+
+    .textWithLines {
+      margin-top: 6.5vh;
+    }
+
+    .team {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+
+      .teamimg {
+        width: 24vw;
+        height: auto;
+      }
+
+      div+div{
+        margin-top: 13vh;
+      }
+
+      h3 {
+        font-weight: 600;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  //SUPPORT ...
+  .support {
+    h1{
+      margin: 22vh 0 6.5vh 0;
+    }
+
+    .supportbtn {
+      margin: 6.5vh 0 13vh 0;
+    }
+
+    h3 {
+      margin-bottom: 6.5vh;
+    }
+
+    p {
+      margin: 13vh 0 6.5vh 0;
+    }
+
+    .test {
+      p {
+        font-size: 10px;
+      }
+    }
   }
 
 }
+
+// BREAK POINT ... 
+// SMARTPHONES HORIZONTAL
+
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 420px) {
+
+
+  //TEXT WITH LINES ...
+  .textWithLines {
+    padding: 3.9vh 0;
+    font-size: 20px;
+  }
+
+  //WRAPPER & BODY ...
+  .wrapper {
+    width: 100vw;  
+  }
+
+  .body {
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  //EVENTS ...
+  .events {
+    padding-left: 0;
+    
+    h7 {
+      width: 267px
+    }
+
+    .video {
+      width: auto;
+    }
+  
+    h1 {
+      font-size: calc(35px + 8.3vw);
+      margin: 25px 0 0 0;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  //WHATS ON ...
+  .whatsON {
+    padding-left: 0;
+
+    h5 {
+      font-size: 35px;
+    }
+    .on {
+      flex-direction: column;
+     
+    .textWithLines {
+      h4 {
+        font-size: 20px;
+      }
+    }
+
+    .column1 {
+      margin-bottom: 9.1vh;
+      p {
+        width: 100%;
+      }
+    }
+  
+    .column2 {
+      margin-bottom: 13vh;
+      p {
+        width: 100%;
+      }
+    }
+   }
+  }
+
+  //STREAM ...
+  .stream {
+    padding: 0;
+
+    .streamTitle {
+      h2 {
+        font-size: 30px;
+        width: 258px;
+      }
+    }
+
+    .video {
+      width: auto;
+      height: auto;
+    }
+
+    .streaminfo {    
+      .time {
+        font-size: 16px;
+      }
+      .streambtn {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+
+        a {
+          margin: 0;
+          button {
+            white-space: nowrap;
+          }
+        }
+
+        a:first-child {
+          margin-bottom: 31px;
+        }
+      }
+
+    }
+  }
+
+  //FEATURED ...
+  .featured {
+    padding: 0 40px 0 0;
+    .title {
+      h1 {
+        font-size: calc(35px + 8.3vw);
+      }
+      h4 {
+        visibility: hidden;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  //CALLOUT ...
+  .callout {
+    padding: 0 0 20px 0;
+    h1{
+      margin: 31px 0 0 0;
+      font-size: 70px;
+    }
+
+    .callouttxt {
+        h3 {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }    
+
+    .textWithLinesRedOut {
+      h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 17px 0;
+      }
+    }
+
+    .howtoapply {
+      margin: 13vh 0;
+      h5 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 0;
+        line-height: 30px;
+      }
+    }
+
+    button {
+      margin-top: 4.4vh;
+    }
+
+  } 
+
+  //ABOUT ...
+  .about {
+    margin: 30px 0 0 0;
+    padding: 0;
+
+    h1 {
+      margin-top: 0;
+      font-size: calc(35px + 8.3vw);
+    }
+    .abouttxt {
+      flex-direction: column;
+      margin: 0;
+    
+      .abouttxt1 {
+        margin-bottom: 76px;
+        .textWithLines {
+          margin-top: 10px;
+        }
+      }
+
+      .abouttxt2 {
+        margin-bottom: 76px;
+      }
+    }
+
+    .team {
+      margin: 47.5px 0 0 0;
+      display: flex;
+      flex-direction: column;
+
+      .teamtitle {
+        h3 {
+          font-size: 19px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .teamimg {
+        margin-top: 0;
+        width: 186px;
+        height: auto;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      div+div{
+        margin-top: 42px;
+      }
+    }
+  }
+  
+  //SUPPORT ...
+  .support {
+    padding: 0 0 0 0;
+    h1{
+      margin: 80px 0 20px 0;
+      font-size: 70px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin: 0 0 0 0;
+    }
+
+    p {
+      margin: 21px 0 21px 0;
+    }
+
+    .supportbtn {
+      margin: 6.5vh 0 13vh 0;
+      flex-direction: column;
+
+      button:first-child {
+        margin-bottom: 32.5px;
+      }
+    }
+
+    .sponsors { 
+      margin-right: 40px;     
+      h3 {
+        margin-bottom: 29px;
+        font-size: 16px;
+      }
+      p {
+        font-size: 12px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  
+  //DIVIDER ...
+  .TheNowImg {
+    display: none;
+  }
+
+  .TheNowSVG {
+    // display: none;
+    width: auto;
+    height: auto;
+  }
+}
+

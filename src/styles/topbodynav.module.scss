@@ -2,30 +2,46 @@
   width: 100vw;
   height: 59px;
   display: flex;
-  position: fixed;
   flex-direction: row;
-  justify-content: right;
-  background-color: blue;
-  opacity: 90%;
-  z-index: 0;
+  position: fixed;
+  background-color: white;
+  opacity: 90;
+  z-index: 1;
 }
 
-.container{
-  align-self: center;
-  margin-right: 2.3vw;
+.container {
+  height: 100%;
+  display: flex;
+  margin: 0 0 0 auto;
+  padding: auto 0;
 }
+
+a {
+  margin: auto 2.3vw auto 0;
+  padding: auto 0;
+}
+
+
 
 .patron {
   align-self: center;
   margin-right: 6.2vw;
-  svg{
-    text{
+  svg {
+    transition: transform 150ms ease;
+
+    text {
       font-family: 'Open Sans', sans-serif;
       font-weight: 600;
+      transition: color 250ms ease-in-out;
     }
+    
   }
-}
 
-.a, .b {
-  fill: black;
+  svg:hover {
+    transform: scale(0.99);
+  }
+
+  svg:active {
+    transform: scale(0.96);
+  }
 }

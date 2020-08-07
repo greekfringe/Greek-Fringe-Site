@@ -56,7 +56,7 @@ function ArtistFeatured (){
 
               <h2>{edge.node.frontmatter.name}</h2> 
 
-              <div>
+              <div className={featuredStyles.img}>
                   <Img 
                     fluid = {edge.node.frontmatter.featuredImage.childImageSharp.fluid}
                   />
@@ -66,7 +66,7 @@ function ArtistFeatured (){
 
               <div className={featuredStyles.aboutflex}> 
                 <div className={featuredStyles.textWithLines}>
-                  <h4>MUSIC</h4>
+                MUSIC
                 </div>
                 <div className={featuredStyles.text}>
                   <p>{edge.node.frontmatter.description}</p>

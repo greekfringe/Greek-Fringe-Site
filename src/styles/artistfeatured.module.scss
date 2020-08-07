@@ -17,7 +17,7 @@
   
     .textWithLines {
       
-      width: 100%;
+      width: auto;
       padding: 1vw 0 1vw 0;
       display: inline-block; 
       vertical-align: middle;
@@ -53,5 +53,58 @@
   
   
   }
+
+}
+
+// BREAK POINTS
+
+@media only screen and (max-width: 420px) {
+  
+  ol {
+    padding-left: 0;
+  }
+  
+  .wrapper {
+    margin: 0;
+    
+    .img {
+      margin: 21px 0 40px 0;
+    }
+
+    .about {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .aboutflex {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3.7vh;
+
+      .textWithLines {
+        width: auto;
+        margin: 25px auto 27px 0;
+        padding: 3.9vh 0;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .text {
+        p {
+          margin-top: 0;
+          margin: 0;
+        }
+      }
+
+      button {
+        width: auto;
+        margin: 27px auto 70px 0;
+        align-self: unset;
+      }
+    }
+  
+  }
+
 
 }
