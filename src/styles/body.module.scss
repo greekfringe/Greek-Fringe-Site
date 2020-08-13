@@ -352,7 +352,8 @@
 // ____________ SUPPORT ____________
 
 .supportanchor {
-  scroll-margin-top: 5vh;
+  scroll-margin: 5vh 0 0 0;
+  -webkit-scroll-margin: 5vh 0 0 0;
 }
 .support {
   width: 100%;
@@ -934,6 +935,7 @@ and (max-width: 430px) {
     }
     .eventsanchor {
       scroll-margin-top: 23vh;
+      scroll-snap-margin-top: 23vh;
     }
     h1 {
       font-size: calc(35px + 8.3vw);

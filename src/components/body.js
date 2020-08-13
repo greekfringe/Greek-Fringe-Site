@@ -1,10 +1,6 @@
 import React from "react"
-
-// import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
-
-
 
 
 // COMPONENTS...
@@ -125,10 +121,7 @@ function Body() {
       <div className={bodyStyles.body}>
 {/* EVENTS SECTION ... */}
         <div className={bodyStyles.events}>
-          <h7
-          data-sal="slide-up"
-          data-sal-delay="350"
-          data-sal-easing="ease-in">
+          <h7>
             An exploration of contemporary Hellenic diversity and innovation.
           </h7>
           <div className={bodyStyles.video}>
@@ -150,10 +143,7 @@ function Body() {
             </div>
           </div>
           <div id="events" className={bodyStyles.eventsanchor}></div>
-          <h1
-          data-sal="slide-up"
-          data-sal-delay="350"
-          data-sal-easing="ease-in">
+          <h1>
             Events</h1>
           <h3>Greek Fringe Fest is all about unveiling independent artists who are not afforded the attention they deserve. Our mission is to curate events that do just that! Keep an eye on our page for upcoming events in Melbourne, Sydney, New York, Nicosia, Athens and who knows where else?! 
           </h3>
@@ -186,10 +176,7 @@ function Body() {
 {/* STREAM VIDEO SECTION ... */}
         <div className={bodyStyles.stream}>
 
-          <div className={bodyStyles.streamTitle} 
-            data-sal="slide-up"
-            data-sal-delay="350"
-            data-sal-easing="ease-in">
+          <div className={bodyStyles.streamTitle}>
             <h2>
               Amalgamation Project (CY) + Luka Lesson (AU)
             </h2>
@@ -204,10 +191,7 @@ function Body() {
               <div className={bodyStyles.time}>
                 8:30pm-9:30pm (AEST) 28 August, 2020
               </div>
-              <div className={bodyStyles.streambtn}
-              data-sal="slide-up"
-              data-sal-delay="350"
-              data-sal-easing="ease-in">
+              <div className={bodyStyles.streambtn}>
                 <a href="https://www.facebook.com/greekfringe/" target="_blank" rel="noreferrer"><button className={bodyStyles.free} type="button" aria-label="Watch Live Stream on GFF's Facebook"><p>WATCH LIVE STREAM</p></button></a>
                 <a href="https://www.stickytickets.com.au/fdqoh/greek_fringe_fest__amalgamation_project_cy__luka_lesson_au.aspx" target="_blank" rel="noreferrer"><button className="buttonOrange" type="button" aria-label="Support Artist">SUPPORT THE ARTISTS</button>
                 </a> 
@@ -519,10 +503,7 @@ function Body() {
         <div className={bodyStyles.featured}>  
           <div id="featured" className={bodyStyles.featuredanchor}></div>
           <div className={bodyStyles.title}>
-              <h1
-              data-sal="slide-up"
-              data-sal-delay="350"
-              data-sal-easing="ease-in">Featured Artists</h1>
+              <h1>Featured Artists</h1>
               <h4>Music - Visual - Performance - Words</h4> 
           </div>
         
@@ -693,10 +674,7 @@ function Body() {
         {/* <div id="callout" className={bodyStyles.calloutanchor}></div> */}
         <div id="callout" className={bodyStyles.callout}>
           
-          <h1
-          data-sal="slide-up"
-          data-sal-delay="350"
-          data-sal-easing="ease-in">Artist Callout</h1>
+          <h1>Artist Callout</h1>
 
           <div className={bodyStyles.callouttxt}>
             <p><h3>What we’re looking for?</h3></p>
@@ -721,10 +699,7 @@ function Body() {
                 <h5>How to apply</h5>
                 <p>Make sure your work is a good fit for our platform (and that we’re a good fit for you). Take a look at our <b>About</b> section to get a feel for what we do.</p>
 
-                <Link to="/form"
-                data-sal="slide-up"
-                data-sal-delay="350"
-                data-sal-easing="ease-in">
+                <Link>
                   <button>APPLY NOW</button>
                 </Link>
               
@@ -892,10 +867,7 @@ function Body() {
       <div className={bodyStyles.body}>
         <div className={bodyStyles.about}>
         <div id="about" className={bodyStyles.aboutanchor}></div>  
-        <h1
-        data-sal="slide-up"
-        data-sal-delay="350"
-        data-sal-easing="ease-in">About</h1>
+        <h1>About</h1>
 
         
         <div className={bodyStyles.abouttxt}>  
@@ -1021,18 +993,12 @@ function Body() {
         <div className={bodyStyles.support}>
 
           <div id="support" className={bodyStyles.supportanchor}></div>      
-          <h1
-          data-sal="slide-up"
-          data-sal-delay="350"
-          data-sal-easing="ease-in">Support</h1>
+          <h1>Support</h1>
           
             <p><h3>We LURVE our sponsors! They are the force that enables us to shed light on the obscure, the underrepresented and the mega-talented. Its thanks to them that we can explore what contemporary Hellenic culture can bring to the table beyond cuisine.</h3></p>
             <p><h3>If this strikes a chord with you, get on board and…</h3></p>
 
-          <div className={bodyStyles.supportbtn}
-          data-sal="slide-up"
-          data-sal-delay="350"
-          data-sal-easing="ease-in">  
+          <div className={bodyStyles.supportbtn}>  
             <a href="https://www.patreon.com/greekfringefest" target="_blank" rel="noreferrer"><button className="buttonOrange" type="button" aria-label="Become a Patron">BECOME A PATRON</button></a>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
               <input type="hidden" name="cmd" value="_s-xclick" />
