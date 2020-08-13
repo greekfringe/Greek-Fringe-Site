@@ -1,19 +1,55 @@
 .wrapper {
-  width: 100vw;
-  height: 59px;
-  display: flex;
-  flex-direction: row;
   position: fixed;
+  display: grid;
+  grid-template: 9vh/ 100vw;
+  justify-content: right;
   background-color: white;
-  opacity: 90;
-  z-index: 1;
+  opacity: 0.9;
+  z-index: 2;
 }
 
 .container {
+  width: auto;
   height: 100%;
   display: flex;
+  flex-direction: row;
+  position: relative;
   margin: 0 0 0 auto;
-  padding: auto 0;
+
+  .socialico {
+    margin: auto 0 auto 44px;
+    svg {
+      width: 24px;
+      height: auto;
+      margin: auto 0;
+    }
+  }
+
+  .patron {
+    margin: auto 0 auto 44px;
+    svg {
+      width: auto;
+      height: 24px;
+      margin: auto 0;
+      transition: transform 150ms ease;
+  
+      text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        transition: color 250ms ease-in-out;
+      }
+      
+    }
+  
+    svg:active {
+      transform: scale(0.96);
+    }
+  }
+
+  span {
+    width: 5.6vw;
+  }
+
 }
 
 a {
@@ -21,27 +57,65 @@ a {
   padding: auto 0;
 }
 
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 430px) {
 
+  .wrapper {
+    width: 100vw;
+    margin: 18.7vh 0 0 0;
+    background-color: #EF4423;
+    opacity: 1;
+    z-index: 3;
 
-.patron {
-  align-self: center;
-  margin-right: 6.2vw;
-  svg {
-    transition: transform 150ms ease;
+    .container {
+      width: 100vw;
+      justify-content: space-evenly;
 
-    text {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
-      transition: color 250ms ease-in-out;
+      .socialico {
+        margin: auto;
+        svg {
+          width: 4.5vw;
+          height: auto;
+        }
+      }
+
+      .patron {
+        margin: auto;
+        svg {
+          width: auto;
+          height: 2.5vh;
+        }
+      }
+      
     }
-    
+    span {
+      width: 0;
+    }
   }
+}
 
-  svg:hover {
-    transform: scale(0.99);
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 900px) {
+  .wrapper {
+    grid-template: 8vh/ 100vw;
   }
+  .container {
+    .socialico {
+      margin-left: 24px;
+    }
+    .patron {
+      margin-left: 24px;
+    }
+  }
+}
 
-  svg:active {
-    transform: scale(0.96);
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 900px) 
+and (orientation: landscape) {
+  .wrapper {
+    grid-template: 15vh/ 100vw;
   }
 }

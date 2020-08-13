@@ -121,7 +121,7 @@ h1 {
 }
 
 h2 {
-  font-size: calc( 30px + 1.5vw);
+  font-size: calc( 22px + 1.5vw);
   margin: 0;
 }
 h3 {
@@ -212,7 +212,15 @@ p {
   height: 9.2vh;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: calc(56px + 5.4vw);
+  }
+}
+
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 800px)  {
   html, body {
     width: 100vw;
   }

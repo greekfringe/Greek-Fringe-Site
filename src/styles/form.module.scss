@@ -1,8 +1,11 @@
-
+body {
+  background-color: #E5E5E5;
+}
 .wrapper {
   width: auto;
   height: auto;
   margin: 0 19.4vw;
+  background-color: white;
   display: flex;
   flex-direction: column;
 
@@ -23,9 +26,9 @@
       }
 
       .stairs {
-        width: 7vw;
+        width: 5vw;
         height: auto;
-        margin: 0 0 0 auto;
+        margin: auto 0 0 auto;
         align-self: flex-end;
       }
       
@@ -175,7 +178,8 @@
       flex-direction: row;
       justify-content: flex-end;
       button {
-        width: 10.7vw;
+        width: auto;
+        min-width: 10.7vw;
         margin: 4.6vh 0 0 2vw;  
       }
   
@@ -198,5 +202,148 @@
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
+
+// BREAKPOINTS ... 
+
+//IPADS
+@media only screen 
+and (max-width: 1024px) {
+  .wrapper {
+    margin: 0 12.4vw;
+  }
+}
+
+//SMARTPHONE 
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 430px) {
+  .wrapper {
+    margin: 0;
+    .header {
+      position: fixed;
+      height: 200px;
+      .container {
+        margin: 4.6vh 5.5vw 13vh 5.5vw;
+        .logo {
+          width: 41vw;
+        }
+        .stairs {
+          display: none;
+        }
+      }
+    }
+
+    form {
+      margin: 223px 5.5vw 3.5vh 5.5vw;
+      .description {
+        flex-direction: column;
+        margin-bottom: 6.4vh;
+        .textWithLines {
+          margin-bottom: 5.5vh;
+          h4 {
+            margin: 2vh 0;
+          }
+        }
+        div{
+          p{
+            margin-left: 0;
+          }
+        }
+      }
+
+      .input {
+        height: 100%;
+        flex-direction: column;
+        p {
+          height: 4vh;
+          white-space: pre-wrap;
+        }    
+        input {
+          width: auto;
+          margin: 0;
+          height: 4vh;
+          padding-left: 23px;
+        }
+    
+        input::placeholder {
+          padding-left: 20px;
+        }
+      }
+
+      .input:nth-child(11) {
+        textarea{
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 900px)
+and (orientation: landscape) {
+  .wrapper {
+    margin: 0;
+    .header {
+      position: fixed;
+      height: 120px;
+      .container {
+        margin: 4.6vh 5.5vw 13vh 5.5vw;
+        .logo {
+          width: 15vw;
+        }
+        .stairs {
+          display: none;
+        }
+      }
+    }
+
+    form {
+      margin: 163px 5.5vw 3.5vh 5.5vw;
+      .description {
+        flex-direction: column;
+        margin-bottom: 6.4vh;
+        .textWithLines {
+          margin-bottom: 5.5vh;
+          h4 {
+            margin: 2vh 0;
+          }
+        }
+        div{
+          p{
+            margin-left: 0;
+          }
+        }
+      }
+
+      .input {
+        height: 100%;
+        flex-direction: column;
+        p {
+          height: 8vh;
+          white-space: pre-wrap;
+        }    
+        input {
+          width: auto;
+          margin: 0;
+          height: 8vh;
+          padding-left: 23px;
+        }
+    
+        input::placeholder {
+          padding-left: 20px;
+        }
+      }
+
+      .square {
+        textarea {
+          height: 26vh;
+        }
+      }
+    }
+  }  
+}
+
 
 

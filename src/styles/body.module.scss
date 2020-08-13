@@ -7,10 +7,12 @@
   display: flex;
   flex-direction: column;
   background-color: white;
+  overflow: scroll;
+	scroll-snap-type: y proximity;
 }
 
 .body {
-  width: 50vw;
+  width: 54.5vw;
   height: 100%;
   margin-left: 40vw;
   display: flex;
@@ -51,12 +53,13 @@
   height: auto;
   display: flex;
   flex-direction: row;
-  z-index: 9999;
+
+  z-index: 4;
 }
 
 
 .TheNowImg {
-  width: 60.6vw;
+  width: 60.81vw;
   height: auto;
  
 }
@@ -64,17 +67,17 @@
 .TheNowSVG {
   width: 39.9vw;
   height: auto;
-  z-index: 7;
 
+}
+
+.TheNowPhone {
+  display: none;
+  visibility: hidden;
 }
 
 // SECTION STYLE ...
 
 // ____________ EVENTS ____________
-
-.eventsanchor {
-  // margin-bottom: 5.4vh;
-}
 
 .events {
   width: 100%;
@@ -82,7 +85,6 @@
   padding-left: 3.5vw;
   display: flex;
   flex-direction: column;
-  // column-gap: 1.6vw;
 
   h7 {
     width: 589px;
@@ -93,17 +95,10 @@
 
   .video {
     width: auto;
-    // height: 55vh;
     margin: 4.5vh 0 0 0; 
-
-    // iframe {
-    //   width: 50vw;
-    //   height: 100%;
-    // } 
     } 
   
   h1 {
-    transform: translateX(-0.8vw);
     line-height: 138px;
     margin: 9.2vh 0 4.6vh 0;
   }
@@ -131,10 +126,8 @@
   }
 
   .on {
-  //  margin-right: 6.25vw;
    display: flex;
    flex-direction: row;
-   column-gap: 5.1vw;
 
   .textWithLines {
     margin-top: 1.9vh;
@@ -144,6 +137,8 @@
   }
 
   .column1 {
+    width: 22.8vw;
+    margin-right: 5.1vw;
     p {
       width: auto;
     }
@@ -163,7 +158,7 @@
 .stream {
   width: 100%;
   height: auto;
-  padding: 10.2vh 0 0 3.5vw;
+  padding: 15.7vh 0 0 3.5vw;
   display: flex;
   flex-direction: column;
 
@@ -178,76 +173,45 @@
     margin: 0 0 0 9.2vw;
 
     .time {
-      font-size: calc( 21px + 1.1vw);
-      margin-top: 4.4vh;
-      white-space: nowrap;
+      font-size: calc( 23px + 1.1vw);
+      margin-top: 4.6vh;
     }
 
-    .free {
-      p {
-        transform: translateY(-5px);
-      }
-      p:after {
-        content: "FREE";
-        margin-left: 10px;
-        font-weight: 100;
-      }
-    }
-  
     .streambtn {
-      margin: 4.4vh 0 11.6vh 0;
-    }
-  
-    button:first-child {
-      margin-right: 1.5vw;
-    }
-  
-    .buttonW {
-      margin-top: 3.7vh;
-      button {
-        width: 250px;
-        
+      margin: 4.6vh 0 9.2vh 0;
+      display: flex;
+      flex-direction: row;
+      .free {
+        margin: auto 0 0 0;
+        p {
+          transform: translateY(-5px);
+        }
+        p:after {
+          content: "FREE";
+          margin-left: 10px;
+          font-weight: 100;
+        }
+      }
+
+      button:first-child {
+        margin-right: 1.5vw;
       }
     }
 
     .streamtxt {
       p {
-        margin-bottom: 3.1vh;
+        margin-bottom: 0;
       }
-    }
-    
-    .textWithLines {
-      p {
-        margin: 0;
+
+      .streamtxt2 {
+        margin: 9.2vh 0;
+
       }
-    }
-  
-    .seemore {
-      margin-top: 12.3vh;
-      display: flex;
-      flex-direction: row;
-  
-      .textWithLines {
-        margin-bottom: 2.4vh;
-        p {
-          width: 81px;
-          margin: 0;
-        }
-      }
-  
-      p {
-        margin: 0 0 0 3.2vw;
-      }
-  
-    }
-    .streambtnCataloge {
-      margin-left: 7.5vw;
     }
     
   }
 
 }
-
 
 // ____________ FEATURED ____________
 
@@ -259,10 +223,10 @@
   padding-left: 3.5vw;
   display: flex;
   flex-direction: column;
-  margin-right: 6vw;
+  margin: 9.2vh 6vw 0 0;
 
   .featuredanchor {
-    margin-bottom: 4.4vh;
+    scroll-margin-top: 6vh;
   }
   
   .title {   
@@ -274,21 +238,27 @@
   
     h4 {
       writing-mode: vertical-rl;
-      margin: 0 0 0 auto;
+      margin: 4vh 0 0 auto;
       font-weight: 600;
+      transform: translate(3.2vw); 
     }
   }
 
   h3 {
     font-weight: 400;
-    margin-bottom: 6.9vh;
+    margin: 1.5vh 0 15.7vh 0;
+  }
+  .seemore {
+    margin:0 0 9.2vh 13.9vw;
+    p {
+      margin: 4.6vh 0;
+    }
   }
 }
 
 // ____________ CALLOUT ____________
 
 .calloutanchor {
-
 }
 
 .callout {
@@ -298,8 +268,11 @@
   display: flex;
   flex-direction: column;
 
-  .callouttxt {
+  h1 {
+    margin: 6vh 0 0 0;
+  }
 
+  .callouttxt {
     h3 {
       line-height: 35px;
     }
@@ -309,12 +282,12 @@
     padding: 0 0 0 9.3vw;
     
     h2 {
-      margin: 12.7vh 0 2.9vh 0;
+      margin: 15.7vh 0 2.9vh 0;
     }
   }
 
   .howtoapply {
-    margin: 10vh 0 10vh 0;
+    margin: 9.2vh 0 9.2vh 0;
     display: flex;
     flex-direction: column;
 
@@ -331,34 +304,46 @@
 
 // ____________ ABOUT ____________
 
+.aboutanchor {
+  scroll-margin-top: 5vh;
+}
 .about {
   width: 100%;
   height: auto;
-  padding: 0 6.2vw 0 3.5vw;
+  padding: 6vh 0 15.7vh 3.5vw;
 
   .abouttxt {
     display: flex;
     flex-direction: row;
-    // column-gap: 5.1vw;
-    margin: 10vw 0 8.3vh 0;
+    margin: 15.7vh 0 15.7vh 0;
 
+
+    .abouttxt1 {
+      margin-right: 5.1vw;
+    }
   }
 
   .team {
     width: auto;
     height: auto;
-    margin: 6.2vh 0;
+    margin-top: 4.6vh;
     display: grid;
     grid-template: repeat(2, auto) / repeat(3, 15.5vw);
     column-gap: 2vw;
     row-gap: 7vh;
-    
-    // div {
-    //   p:first-of-type {
-    //     font-weight: 600;
-    //   }
-    // }
-    
+    .teamtitle {
+      white-space: nowrap;
+      overflow: hidden;
+      a {
+        margin: 0;
+      }
+      h3 {
+        font-weight: 600;
+      }
+      p {
+        margin: 9px 0 6px 0;
+      }
+    }
 
   }
 }
@@ -366,10 +351,17 @@
 
 // ____________ SUPPORT ____________
 
+.supportanchor {
+  scroll-margin-top: 5vh;
+}
 .support {
   width: 100%;
   height: auto;
-  padding: 0 6.2vw 0 3.5vw;
+  padding: 0 0 0 3.5vw;
+
+  h1 {
+    margin-bottom: 9.2vh;  
+  }
 
   h3 {
     line-height: 35px;
@@ -377,7 +369,7 @@
   
   .supportbtn {
     height: auto;
-    margin: 3.8vh 0 0 0;
+    margin: 4.6vh 0 9.2vh 0;
     display: flex;
     flex-direction: row;
 
@@ -394,19 +386,79 @@
     
   }
 
+  .sponsors {
+    h3 {
+      margin-bottom: 4.6vh;
+    }
+    p {
+      margin: 9.2vh 0 4.6vh 0;
+    }
+  }
 }
 
 // BREAKPOINTS ... 
 
- @media only screen and (max-width: 1024px) {
+//LAPTOP HiDPI
+@media only screen 
+ and (max-width: 1450px) {
+
+    .stream {
+      .streaminfo {
+        .streambtn {
+          flex-direction: column;
+          button:first-child {
+            margin-bottom: 3.6vh;
+          }
+        }
+      }
+    }
+    .about {
+      .team {
+        grid-template: repeat(3, auto) / repeat(2, 23vw);
+        column-gap: 4vw;
+      }
+
+    }
+ }
+
+ //LAPTOP MDPI
+ @media only screen 
+ and (max-width: 1290px) {
+    .featured {
+      .title {
+        h1 {
+          font-size: calc( 70px + 4.5vw);
+        }
+        h4 {
+          transform: translate(2vw); 
+        }
+      }
+    }
+ }
+
+ //IPAD Pro LANDSCAPE
+ @media only screen 
+ and (max-width: 1112px)
+ and (orientation: landscape) {
+
+ }
+
+
+//IPADS LANDSCAPE
+ @media only screen 
+ and (max-width: 1024px)
+ and (orientation: landscape) {
    .events {
+    h7 {
+      width: 46.6vw;
+      margin-top: 13vh;
+    }
     h3 {
       margin-bottom: 13vh;
-  } 
+    } 
    }
 
   .whatsON {
-
     .on {
      flex-direction: column;
      
@@ -418,6 +470,8 @@
     }
 
     .column1 {
+      width: auto;
+      margin-right: 0;
       margin-bottom: 9.1vh;
       p {
         width: 100%;
@@ -471,6 +525,9 @@
 
   //FEATURED ...
     .featured {
+      .featuredanchor {
+        scroll-margin-top: 8.5vh;
+      }
       .title {
         width: auto;
         margin-right: 0;
@@ -479,17 +536,21 @@
           font-size: 112px;
         }
         h4 {
-          text-align: center;
           margin: 1.5vh 0 0 2vw;
         }
-      
       }
+
+      .seemore {
+        margin-left: 0;
+      }
+      
     }
     
   //CALLOUT ...
   .callout {
     h1{
-      margin: 13vh 0 6.5vh 0;
+      font-size: 80px;
+      margin: 9.7vh 0 6.5vh 0;
     }
 
     .preferenceto {
@@ -516,10 +577,13 @@
   }  
 
   //ABOUT ...
+  .aboutanchor {
+    scroll-margin-top: 10vh;
+  }
   .about {
-    margin-bottom: 0;
+    padding-top: 9.7vh;
     h1 {
-      margin-top: 13vh;
+      font-size: 80px;
     }
     .abouttxt {
       flex-direction: column;
@@ -531,14 +595,6 @@
         margin-bottom: 13vh;
     }
 
-    .abouttxt2 {
-        margin-bottom: 13vh;
-    }
-
-    .textWithLines {
-      margin-top: 6.5vh;
-    }
-
     .team {
       margin-bottom: 0;
       display: flex;
@@ -547,10 +603,11 @@
       .teamimg {
         width: 24vw;
         height: auto;
+        margin-top: 0;
       }
 
       div+div{
-        margin-top: 13vh;
+        margin-top: 6.5vh;
       }
 
       h3 {
@@ -563,9 +620,12 @@
   }
 
   //SUPPORT ...
+  .supportanchor {
+    scroll-margin-top: 10vh;
+  }
   .support {
     h1{
-      margin: 22vh 0 6.5vh 0;
+      margin: 0 0 6.5vh 0;
     }
 
     .supportbtn {
@@ -579,24 +639,265 @@
     p {
       margin: 13vh 0 6.5vh 0;
     }
+  }
+}
 
-    .test {
+//IPADS PORTRAIT
+@media only screen 
+and (max-width: 1024px) {
+  .events {
+    h7 {
+      width: 46.6vw;
+      margin-top: 9.7vh;
+    }
+    h1 {
+      font-size: 112px;
+      margin-top: 61px;
+      margin-bottom: 11px;
+    }
+    h3 {
+      margin-bottom: 87px;
+    } 
+   }
+
+  .whatsON {
+    .on {
+     flex-direction: column;
+     
+    .textWithLines {
+      padding: 20px 0;
+      margin: 20px 0 0 0;
+      h4 {
+        margin: 0;
+      }
+    }
+
+    .column1 {
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 9.1vh;
       p {
-        font-size: 10px;
+        width: 100%;
+      }
+    }
+  
+    .column2 {
+      margin-bottom: 9.7vh;
+      p {
+        width: 100%;
+      }
+    }
+   }
+  }
+
+  //STREAM ...
+  .stream {
+    padding: 0 0 0 3.5vw;
+
+    .streamTitle {
+      h2 {
+        font-size: 31px;
+      }
+    }
+    .video {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    .streaminfo {
+      width: auto;
+      margin: 0;
+      .time {
+        font-size: calc( 12px + 1.2vw);
+        white-space: normal;
+        margin-top: 0;
+      }
+
+      .streambtn {
+        display: flex;
+        flex-direction: column; 
+        margin-top: 25px;
+        margin-bottom: 100px;
+  
+        a {
+          width: auto;
+          margin: 0;
+          button {
+            white-space: nowrap;
+          }
+        }
+
+        a:first-child {
+          margin-bottom: 0;
+        }
+
+        a:nth-child(2) {
+          button {
+            margin-bottom: 0;
+          }
+        }
+      }
+    
+
+      .streamtxt {
+        margin-bottom: 9.7vh;
+        p:first-of-type {
+          margin-bottom: 9.7vh;
+        }
+      }
+      
+    }
+  }
+
+  //FEATURED ...
+    .featured {
+      margin-top: 61px;
+      .title {
+        width: auto;
+        margin-right: 0;
+        flex-direction: column;
+        h1 {
+          font-size: 80px;
+          
+        }
+        h4 {
+          margin: 4px 0 0 0;
+          writing-mode: initial;
+          transform: none;
+        }
+      }
+
+      h3 { 
+        margin-top: 4px;
+        margin-bottom: 9.7vh;
+      }
+
+      .seemore {
+        margin-left: 0;
+      }
+      
+    }
+    
+  //CALLOUT ...
+  .callout {
+    h1{
+      margin: 61px 0 4px 0;
+    }
+
+    .preferenceto {
+      padding-left: 0;
+      h2 {
+        margin-top: 100px;
+      }
+    }  
+
+    .textWithLinesRedOut {
+      h3 {
+        // margin: 2.9vh 0;
+        line-height: 40px;
+      }
+    }
+    .howtoapply {
+      margin: 100px 0;
+      p {
+        margin-bottom: 0;
+        line-height: 37px;
+      }
+    }
+
+    button {
+      margin-top: 4.4vh;
+    }
+  }  
+
+  //ABOUT ...
+  .aboutanchor {
+    scroll-margin-top: 6vh;
+  }
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .abouttxt {
+      flex-direction: column;
+      margin-top: 4.8vh;
+      margin-bottom: 0;
+    }
+
+    .abouttxt1 {
+        margin-bottom: 100px;
+        .textWithLines {
+          padding: 20px 0;
+        }
+    }
+
+    .abouttxt2 {
+        margin-bottom: 100px;
+        .textWithLines {
+          padding: 20px 0;
+        }
+    }
+
+    .textWithLines {
+      padding: 20px 0;
+    }
+
+    .team {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+
+      .teamimg {
+        width: 24vw;
+        height: auto;
+        margin-top: 0;
+      }
+
+      div+div{
+        margin-top: 4.8vh;
+      }
+
+      h3 {
+        font-weight: 600;
+      }
+      p {
+        margin-bottom: 0;
       }
     }
   }
 
+  //SUPPORT ...
+  .supportanchor {
+    scroll-margin-top: 6vh;
+  }
+  .support {
+    h1{
+      font-size: 80px;
+      margin: 0 0 50px 0;
+    }
+
+    .supportbtn {
+      flex-direction: column;
+      margin: 50px 0 100px 0;
+      
+      button:first-child {
+        margin-bottom: 50px;
+      }
+    }
+    .sponsors {
+      h3 {
+        margin-bottom: 50px;
+      }
+  
+      p {
+        margin: 100px 0 50px 0;
+      }
+    }
+  }
 }
 
-// BREAK POINT ... 
-// SMARTPHONES HORIZONTAL
-
+//SMARTPHONE 
 @media only screen 
 and (min-width: 0px) 
-and (max-width: 420px) {
-
-
+and (max-width: 430px) {
   //TEXT WITH LINES ...
   .textWithLines {
     padding: 3.9vh 0;
@@ -605,29 +906,35 @@ and (max-width: 420px) {
 
   //WRAPPER & BODY ...
   .wrapper {
-    width: 100vw;  
+    width: 100vw; 
   }
 
   .body {
     width: auto;
     height: auto;
-    margin: 0 20px;
+    margin: 0 20px 0 20px;
     justify-content: center;
     align-content: center;
+    
   }
 
   //EVENTS ...
+  .top {
+    scroll-margin-top: 29vh;
+  }
   .events {
     padding-left: 0;
-    
     h7 {
-      width: 267px
+      margin-top: 32vh;
+      width: 73vw;
     }
 
     .video {
       width: auto;
     }
-  
+    .eventsanchor {
+      scroll-margin-top: 23vh;
+    }
     h1 {
       font-size: calc(35px + 8.3vw);
       margin: 25px 0 0 0;
@@ -712,7 +1019,11 @@ and (max-width: 420px) {
 
   //FEATURED ...
   .featured {
-    padding: 0 40px 0 0;
+    padding: 0 0 0 0;
+
+    .featuredanchor {
+      scroll-margin-top: 27vh;
+    }
     .title {
       h1 {
         font-size: calc(35px + 8.3vw);
@@ -727,9 +1038,15 @@ and (max-width: 420px) {
     }
   }
 
+  .featuredanchor {
+    scroll-margin-top: 29vh;
+  }
+
   //CALLOUT ...
+
   .callout {
     padding: 0 0 20px 0;
+    scroll-margin-top: 26vh;
     h1{
       margin: 31px 0 0 0;
       font-size: 70px;
@@ -773,6 +1090,10 @@ and (max-width: 420px) {
     margin: 30px 0 0 0;
     padding: 0;
 
+    .aboutanchor {
+      scroll-margin-top: 28vh;
+    }
+
     h1 {
       margin-top: 0;
       font-size: calc(35px + 8.3vw);
@@ -804,6 +1125,7 @@ and (max-width: 420px) {
         }
         p {
           font-size: 14px;
+          margin: 9px 0 6px 0;
         }
       }
 
@@ -827,6 +1149,11 @@ and (max-width: 420px) {
   //SUPPORT ...
   .support {
     padding: 0 0 0 0;
+
+    .supportanchor {
+      scroll-margin-top: 22vh;
+    }
+
     h1{
       margin: 80px 0 20px 0;
       font-size: 70px;
@@ -865,14 +1192,46 @@ and (max-width: 420px) {
 
   
   //DIVIDER ...
-  .TheNowImg {
-    display: none;
-  }
+    .TheNowPhone {
+      display: block;
+      visibility: visible;
+      overflow: hidden;
 
-  .TheNowSVG {
-    // display: none;
-    width: auto;
-    height: auto;
-  }
+      .img {
+        width: auto;
+        height: 372px;
+      }
+    }
+    .claimingTheNow {
+      display: none;
+      visibility: hidden;
+    }
 }
 
+
+//SMARTPHONE LANDSCAPE
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 900px)
+and (orientation: landscape) {
+  .wrapper {
+    .events {
+      margin-top: 5vh;
+    }
+  }
+  .callout {
+    .calloutanchor {
+      scroll-margin-top: 8vh;
+    }
+  }
+  .about {
+    .aboutanchor {
+      scroll-margin-top: 10vh;
+    }
+  }
+  .support {
+    .supportanchor {
+      scroll-margin-top: 10vh;
+  }
+  }
+}

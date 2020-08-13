@@ -1,0 +1,127 @@
+// //MENU STYLES ... 
+// .wrapper {
+//   width: 100vw;
+//   height: 100vh;
+//   position: fixed;
+//   padding: 7vw 5vw 7vw 5vw;
+//   display: none;
+//   flex-direction: column;
+//   overflow: hidden;
+//   z-index: 999;
+//   background-color: #EF4423; 
+
+// .row1 {
+//   height: 100%;
+//   display: flex;
+//   flex-direction: row;
+//   margin-bottom: 15vw;
+
+//   .logoSVG {
+//     width: 25vh;
+//     height: auto;
+//   }
+
+//   .cross {
+//     width: 13vw;
+//     height: auto;
+//     margin: 0 0 0 auto;
+//     cursor: pointer;
+//       // TODO MAKE IT TRANSFORM
+//     svg {
+//       // transform: rotate(45deg);
+//     }
+//   }
+// }
+
+//   .row2 {
+//     width: auto;
+//     display: none; 
+//     margin-bottom: 7vw;
+//     background-color: lightgreen;
+//   }
+// }
+
+.row3 {
+  height: 100%;
+  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  margin-top: -7vw;
+}
+
+.stairsSVG {
+  width: 17vh;
+  height: auto;
+  margin: auto 10vw 0 0;
+  svg {
+    transform: translateY(5px);
+  }
+}
+
+
+.linkContainer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto 5vw 0 auto;
+  .windowSVG {
+    width: 15vh;
+    margin: 0 0 5.3vh 0;
+  }
+  .linkList {
+    width: auto;
+    height: auto;
+    
+    ol{ 
+      width: auto;
+      margin: 0px;
+      padding-left: 0px;
+      display: flex;
+      flex-direction: column;
+      li {
+        display: inline-block;
+        list-style: none;
+        color: #000000;  
+        border-top: 2px solid black; 
+        
+        // hr {
+        //   border: 1.5px solid black;
+        //   margin: 0;
+        // }
+
+        .menubtn {
+          width: auto;
+          height: 8.3vh;
+          padding: 0;
+          background-color: transparent;
+          text-align: left;
+          font-size: calc( 9px + 2.1vw);
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          color: black;
+          border: none;
+          cursor: pointer;
+          white-space: nowrap;
+          border-radius: 0;
+        }
+
+        button:active {
+          transform: none;
+        }
+      } 
+      li:nth-child(5) {
+        border-bottom: 2px solid black;
+    }     
+    }
+  }
+} 
+
+// @media only screen 
+// and (min-width: 0px) 
+// and (max-width: 800px)  {
+//   .wrapper {
+//     display: flex;
+//   }
+// }
+

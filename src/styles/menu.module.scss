@@ -1,193 +1,262 @@
 
 //MENU STYLES ... 
 .wrapper {
-  width: 40vw;
+  width: 39.65vw;
   height: 100vh;
-  position: fixed;
-  padding: 58px 0 76px 6.19vw ;
-  overflow: hidden;
-  z-index: 2;
   top: 0px;
   left: 0px;
+  padding: 5.5vh 3.5vw 5.5vh 6.25vw ;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
   background-color: #EF4423;
-
-
-  //Grid styling ...
-  display: grid;
-  grid-template: 100vh / 18vw 9vw;
-  gap: 2.6vw;
-
+  overflow: hidden;
+  z-index: 3;
 }
 
 
 .column1 {
-  grid-column: 1/2;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 11vh;
-  // grid-template: repeat(4, 1fr) / auto;
-  
+  flex-direction: row;
+
+  .logoSVG {
+    width: 260px;
+    height: auto;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    cursor: pointer;
+  }
 }
 
 .column2 {
-  grid-column: 2/3;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 11vh;
+  flex-direction: row;
+  justify-content: space-between;
 
-  .linkList {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    
-    ol{
-      width: 100%;
-      margin: 0px;
-      padding-left: 0px;
-      align-self: flex-end;
-      div{
-        width: 100%;
-        height: 1.5pt;
-        background-color: black;
-      }
-      li {
-        display: inline-block;
-        list-style: none;
-        text-align: left;
-        font-size: calc( 10px + 0.5vw);
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        letter-spacing: 0px;
-        color: #000000;
+  .stairsSVG {
+    margin: auto 0 0 0;
+    width: 9.3vw;
+    height: auto; 
+    svg {
+      transform: translateY(5px);
+    } 
+  }
 
-        .menubtn {
-          width: 250px;
-          height: 8.3vh;
-          padding: 0;
-          background-color: transparent;
-          text-align: left;
-          font-weight: 600;
-          color: black;
-          border: none;
-          cursor: pointer;
-
-        }
-
-        button:active {
-          transform: none;
-        }
+  .linkContainer {
+    width: auto;
+    margin: auto 0 0 auto;
+    .windowSVG {
+      width: 6.5vw;
+      margin: 9.2vh 0 5.4vh 0;
+    }
+    .linkList {
+      width: auto;
+      height: auto;
+      
+      ol{ 
+        width: auto;
+        margin: 0px;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        li {
+          display: inline-block;
+          list-style: none;
+          color: #000000;  
+          border-top: 1.8px solid black; 
+  
+          .menubtn {
+            width: auto;
+            height: 8.3vh;
+            padding: 0;
+            background-color: transparent;
+            text-align: left;
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: black;
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+            border-radius: 0;
+          }
+  
+          button:active {
+            transform: none;
+          }
+        } 
+        li:nth-child(5) {
+          border-bottom: 1.8px solid black;
+      }     
       }
     }
   }
 }
 
-//SVG STYLES
+//BREAKPOINTS ... 
 
-.logoSVG {
-  width: 10vw;
-  height: 19vh;
-  grid-row: 1/2;
-  grid-column: 1/2;
+//LAPTOP HiDPI
+@media only screen 
+ and (max-width: 1450px) {
+   .wrapper {
+      .column1 {
+        .logoSVG {
+          width: 220px;
+        }
+      }
+   }
+ }
 
-}
+//LAPTOP 
+@media only screen 
+ and (max-width: 1290px) {
+   .wrapper {
+      .column1 {
+        .logoSVG {
+          width: 190px;
+        }
+      }
+   }
+ }
 
-.windowSVG {
-  // svg {
-  //   margin: 23vh 1.6vw 0 0;
-  // }
-}
-
-.stairsSVG {
-  margin: auto 0 0 0;
-  width: 10vw;
-  height: 19vh;  
-}
-
-// BREAKPOINTS ... 
-
+//IPADS PORTRAIT 
 @media only screen and (max-width: 1024px) {
 
   .wrapper {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 3.18vw;
+    padding: 4.8vh 3.5vw 4.4vh 4.8vw;
     gap: 0;
 
       .column1 {  
       margin: 0;
         .logoSVG {
-          width: 30vh;
+          width: 27vw;
           height: auto;
           margin: 0 auto 0 0;
         }
       }
       .column2 {        
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template: auto auto / 100%;
         margin: auto 0 0 0;
 
         .stairsSVG {
-          width: 20vh;
+          width: 15vw;
           height: auto;
-          // height: 100%; 
-          // padding: 1vw;
-          margin: auto 10vw 0 0;
+          margin: auto auto 0 0;
+          grid-column: 1/2;
+          grid-row: 2/3;
         }
 
         .linkContainer {
-          width: 13vw;
+          width: auto;
+          margin: auto 0 0 auto;
+          grid-column: 1/2;
+          grid-row: 1/2;
           .windowSVG {
-            width: 15vh;
-            margin: 0 0 5.3vh 0;
+            width: 11vw;
+            margin: 9.2vh auto 5.4vh 0;
           }
           .linkList {
             height: auto;
-            // margin-top: 41px;
+            .menubtn {
+              height: 6.25vh;
+            }
           }
         }
       }
-
   }
-
 }
 
+//IPADS LANDSCAPE
 @media only screen 
-and (min-width: 0px) 
-and (max-width: 420px) {
-  
+and (max-width: 1024px)
+and (orientation: landscape) {
   .wrapper {
-    width: 100vw; 
-    grid-template: 100vh / 41vw 38.8vw;
-    padding: 30px 30px 40px 20px;
-    transition: all 250ms ease-in-out;
-    display: none;
-  }
-
-  .menubtn {
-    width: auto;
-  }
-
-  .stairsSVG {
-    width: 113px;
-    height: 116px;
-    margin-bottom: 30px;
-  }
-
-  .windowSVG {
-    width: 76px;
-    height: 80px;
-    svg {
-      margin: 162px 1.6vw 0 0;
+    padding: 4.8vh 3.5vw 4.4vh 4.8vw;
+    .column1 {
+      .logoSVG {
+        width: 19vw;
+      }
+    }
+    .column2 {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .stairsSVG {
+        width: 11.6vw;
+      }
+      .linkContainer{
+        .windowSVG {
+          width: 8.4vw;
+          margin: 9.2vh auto 5.4vh 0;
+        }
+        .linkList {
+          height: auto;
+          .menubtn {
+            height: 64px;
+          }
+        }
+      }
     }
   }
-
-  button {
-    font-size: 18px;
-    font-weight: 600px;
-  }
-
-  #toggle:checked + .wrapper {
-    height: 200px;
 }
+
+//SMARTPHONE LANDSCAPE
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 900px)
+and (orientation: landscape) {
+  
+  .wrapper {
+    .column1 {
+      .logoSVG {
+        width: 15vw;
+      }
+    }
+    .column2 {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: auto;
+      .stairsSVG {
+        width: 8.6vw;
+      }
+      .linkContainer{
+        margin-top: auto;
+        .windowSVG {
+          width: 6.4vw;
+          margin: 0 auto 3.4vh 0;
+        }
+        .linkList {
+          ol{
+            margin: 0;
+            li {
+              button {
+                font-size: 2.2vw;
+              }
+            }
+          }
+          .menubtn {
+            height: 8.9vh;
+          }
+        }
+      }
+    }
   }
+} 
+
+//SMARTPHONE PORTRAIT
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 430px) {
+  
+  .wrapper {
+    display: none;
+  }
+} 

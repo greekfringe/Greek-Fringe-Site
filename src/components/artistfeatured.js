@@ -12,18 +12,6 @@ function ArtistFeatured (){
   const data = useStaticQuery(graphql`
     query {
 
-      # # // GETTING DATA FOR IMG PLUGIN ...
-      # img: allFile(filter: {relativeDirectory: {eq: "fa_img"}}) {
-      #   nodes {
-      #     id
-      #       childImageSharp {
-      #       fluid {
-      #         ...GatsbyImageSharpFluid
-      #       }
-      #     }
-      #   }
-      # }
-
       # // GETTING DATA FOR MARKDOWN PLUGIN ...
       allMarkdownRemark {
         edges {
@@ -31,6 +19,8 @@ function ArtistFeatured (){
             frontmatter {
               name
               alt
+              type
+              link
               description
                     featuredImage {
                       childImageSharp {
@@ -66,12 +56,17 @@ function ArtistFeatured (){
 
               <div className={featuredStyles.aboutflex}> 
                 <div className={featuredStyles.textWithLines}>
-                MUSIC
+                  <p>{edge.node.frontmatter.type}</p>
                 </div>
                 <div className={featuredStyles.text}>
                   <p>{edge.node.frontmatter.description}</p>
                 </div> 
-                <button class="buttonW">LEARN MORE</button>         
+                <a href={edge.node.frontmatter.link} target="_blank" rel="noreferrer" 
+                  data-sal="slide-up"
+                  data-sal-delay="450"
+                  data-sal-easing="ease-in">
+                  <button class="buttonW">LEARN MORE</button> 
+                </a>        
               </div>
             </div>
           )
