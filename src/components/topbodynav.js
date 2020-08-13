@@ -22,7 +22,7 @@ function Body() {
           />
         </svg>
         </a>
-        <a href="https://www.facebook.com/greekfringefest/" target="_blank" rel="noreferrer" class={topBodyNavStyles.socialico}>
+        <a href="https://www.facebook.com/greekfringe/" target="_blank" rel="noreferrer" class={topBodyNavStyles.socialico}>
           <svg viewBox="0 0 24.273 24.273">
           <defs>
             <style>{".a,.b{fill:#1a1818;}.b{fill-rule:evenodd;}"}</style>

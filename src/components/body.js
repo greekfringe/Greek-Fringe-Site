@@ -141,7 +141,7 @@ function Body() {
             <div className="embed-container">
               <iframe
                 src="https://player.vimeo.com/video/442226983"
-                allow="autoplay; fullscreen"
+                allow="autoplay"
                 webkitallowfullscreen
                 mozallowfullscreen
                 allowFullScreen
