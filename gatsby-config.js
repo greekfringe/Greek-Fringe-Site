@@ -15,18 +15,6 @@ module.exports = {
       `gatsby-transformer-remark`,
       `gatsby-plugin-react-helmet`,
       `gatsby-plugin-styled-components`,
-      // Google analytics -- SEO
-      {
-        resolve: `gatsby-plugin-google-analytics`,
-        options: {
-          trackingId: ``,    },
-      },
-      // Sitemap -- SEO
-      {
-        resolve: `gatsby-plugin-sitemap`,
-        options: {
-          exclude: [`/admin`, `/tags/links`]        }
-      },
       {
         resolve: 'gatsby-plugin-web-font-loader',
         options: {
