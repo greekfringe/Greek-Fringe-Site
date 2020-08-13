@@ -6,10 +6,7 @@ import topBodyNavStyles from "../styles/topbodynav.module.scss"
 function Body() {
   return (
     <div className={topBodyNavStyles.wrapper}>
-      <div className={topBodyNavStyles.container}
-      data-sal="slide-up"
-      data-sal-delay="450"
-      data-sal-easing="ease-in">
+      <div className={topBodyNavStyles.container}>
         <a href="https://twitter.com/greekfringe" target="_blank" rel="noreferrer" class={topBodyNavStyles.socialico}>
           <svg viewBox="0 0 15.667 15.667">
           <path

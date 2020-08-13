@@ -3,6 +3,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 
 
+
 // COMPONENTS...
 import TopBodyNav1 from "../components/topbodynav"
 import ArtistFeatured from "../components/artistfeatured"
@@ -699,7 +700,7 @@ function Body() {
                 <h5>How to apply</h5>
                 <p>Make sure your work is a good fit for our platform (and that we’re a good fit for you). Take a look at our <b>About</b> section to get a feel for what we do.</p>
 
-                <Link>
+                <Link to="/form">
                   <button>APPLY NOW</button>
                 </Link>
               

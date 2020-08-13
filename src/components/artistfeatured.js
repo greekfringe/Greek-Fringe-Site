@@ -61,10 +61,7 @@ function ArtistFeatured (){
                 <div className={featuredStyles.text}>
                   <p>{edge.node.frontmatter.description}</p>
                 </div> 
-                <a href={edge.node.frontmatter.link} target="_blank" rel="noreferrer" 
-                  data-sal="slide-up"
-                  data-sal-delay="450"
-                  data-sal-easing="ease-in">
+                <a href={edge.node.frontmatter.link} target="_blank" rel="noreferrer">
                   <button class="buttonW">LEARN MORE</button> 
                 </a>        
               </div>
