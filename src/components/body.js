@@ -20,7 +20,7 @@ function Body() {
 
     query Images {
 
-      now01: file(relativePath: {eq: "now01.png"}) {
+      now01: file(relativePath: {eq: "now001.png"}) {
         id
         childImageSharp {
           fluid {
@@ -28,7 +28,7 @@ function Body() {
           }
         }
       }
-      now02: file(relativePath: {eq: "now02.png"}) {
+      now02: file(relativePath: {eq: "now002.png"}) {
         id
         childImageSharp {
           fluid {
@@ -36,7 +36,7 @@ function Body() {
           }
         }
       }
-      now03: file(relativePath: {eq: "now03.png"}) {
+      now03: file(relativePath: {eq: "now003.png"}) {
         id
         childImageSharp {
           fluid {
@@ -44,7 +44,7 @@ function Body() {
           }
         }
       }
-      t01: file(relativePath: {eq: "tm01.png"}) {
+      t01: file(relativePath: {eq: "tm001.png"}) {
         id
         childImageSharp {
           fluid {
@@ -52,7 +52,7 @@ function Body() {
           }
         }
       }
-      t02: file(relativePath: {eq: "tm02.png"}) {
+      t02: file(relativePath: {eq: "tm002.png"}) {
         id
         childImageSharp {
           fluid {
@@ -60,7 +60,7 @@ function Body() {
           }
         }
       }
-      t03: file(relativePath: {eq: "tm03.png"}) {
+      t03: file(relativePath: {eq: "tm003.png"}) {
         id
         childImageSharp {
           fluid {
@@ -68,7 +68,7 @@ function Body() {
           }
         }
       }
-      t04: file(relativePath: {eq: "tm04.png"}) {
+      t04: file(relativePath: {eq: "tm004.png"}) {
         id
         childImageSharp {
           fluid {
@@ -76,7 +76,7 @@ function Body() {
           }
         }
       }
-      t05: file(relativePath: {eq: "tm05.png"}) {
+      t05: file(relativePath: {eq: "tm005.png"}) {
         id
         childImageSharp {
           fluid {
@@ -84,7 +84,7 @@ function Body() {
           }
         }
       }
-      t06: file(relativePath: {eq: "tm06.png"}) {
+      t06: file(relativePath: {eq: "tm006.png"}) {
         id
         childImageSharp {
           fluid {
@@ -92,7 +92,7 @@ function Body() {
           }
         }
       }
-      placeholder: file(relativePath: {eq: "placeholder.jpg"}) {
+      placeholder: file(relativePath: {eq: "placeholder00.jpg"}) {
         id
         childImageSharp {
           fluid (quality: 100){
@@ -100,7 +100,7 @@ function Body() {
           }
         }
       }
-      support: file(relativePath: {eq: "support.png"}) {
+      support: file(relativePath: {eq: "support00.png"}) {
         id
         childImageSharp {
           fluid (quality: 100){
