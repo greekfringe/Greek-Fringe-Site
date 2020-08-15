@@ -58,6 +58,7 @@ const Row3 = styled.div`
   justify-content: stretch;
   margin-top: -7vw;
   transition: opacity 300ms ease-in-out;
+  scroll-margin-top: 10px;
 `
 
 

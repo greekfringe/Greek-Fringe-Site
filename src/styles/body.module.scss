@@ -358,6 +358,9 @@
 
 .supportanchor {
   scroll-margin: 5vh 0 0 0;
+  -webkit-scroll-margin-top: 5vh;
+  -moz-scroll-margin-top: 5vh;
+  -ms-scroll-margin-top: 5vh;
 }
 .support {
   width: 100%;
@@ -532,6 +535,9 @@
     .featured {
       .featuredanchor {
         scroll-margin-top: 8.5vh;
+        -webkit-scroll-margin-top: 8.5vh;
+        -moz-scroll-margin-top: 8.5vh;
+        -ms-scroll-margin-top: 8.5vh;
       }
       .title {
         width: auto;
@@ -584,6 +590,10 @@
   //ABOUT ...
   .aboutanchor {
     scroll-margin-top: 10vh;
+    -webkit-scroll-margin-top: 10vh;
+    -moz-scroll-margin-top: 10vh;
+    -ms-scroll-margin-top: 10vh;
+    
   }
   .about {
     padding-top: 9.7vh;
@@ -627,6 +637,9 @@
   //SUPPORT ...
   .supportanchor {
     scroll-margin-top: 10vh;
+    -webkit-scroll-margin-top: 10vh;
+    -moz-scroll-margin-top: 10vh;
+    -ms-scroll-margin-top: 10vh;
   }
   .support {
     h1{
@@ -817,6 +830,9 @@ and (max-width: 1024px) {
   //ABOUT ...
   .aboutanchor {
     scroll-margin-top: 6vh;
+    -webkit-scroll-margin-top: 6vh;
+    -moz-scroll-margin-top: 6vh;
+    -ms-scroll-margin-top: 6vh;
   }
   .about {
     padding-top: 100px;
@@ -872,6 +888,9 @@ and (max-width: 1024px) {
   //SUPPORT ...
   .supportanchor {
     scroll-margin-top: 6vh;
+    -webkit-scroll-margin-top: 6vh;
+    -moz-scroll-margin-top: 6vh;
+    -ms-scroll-margin-top: 6vh;
   }
   .support {
     h1{
@@ -926,6 +945,9 @@ and (max-width: 430px) {
   //EVENTS ...
   .top {
     scroll-margin-top: 29vh;
+    -webkit-scroll-margin-top: 29vh;
+    -moz-scroll-margin-top: 29vh;
+    -ms-scroll-margin-top: 29vh;
   }
   .events {
     padding-left: 0;
@@ -939,7 +961,9 @@ and (max-width: 430px) {
     }
     .eventsanchor {
       scroll-margin-top: 23vh;
-      scroll-snap-margin-top: 23vh;
+      -webkit-scroll-margin-top: 23vh;
+      -moz-scroll-margin-top: 23vh;
+      -ms-scroll-margin-top: 23vh;
     }
     h1 {
       font-size: calc(35px + 8.3vw);
@@ -1029,6 +1053,9 @@ and (max-width: 430px) {
 
     .featuredanchor {
       scroll-margin-top: 27vh;
+      -webkit-scroll-margin-top: 27vh;
+      -moz-scroll-margin-top: 27vh;
+      -ms-scroll-margin-top: 27vh;
     }
     .title {
       h1 {
@@ -1046,6 +1073,9 @@ and (max-width: 430px) {
 
   .featuredanchor {
     scroll-margin-top: 29vh;
+    -webkit-scroll-margin-top: 29vh;
+    -moz-scroll-margin-top: 29vh;
+    -ms-scroll-margin-top: 29vh;
   }
 
   //CALLOUT ...
@@ -1053,6 +1083,9 @@ and (max-width: 430px) {
   .callout {
     padding: 0 0 20px 0;
     scroll-margin-top: 26vh;
+    -webkit-scroll-margin-top: 26vh;
+    -moz-scroll-margin-top: 26vh;
+    -ms-scroll-margin-top: 26vh;
     h1{
       margin: 31px 0 0 0;
       font-size: 70px;
@@ -1098,6 +1131,9 @@ and (max-width: 430px) {
 
     .aboutanchor {
       scroll-margin-top: 28vh;
+      -webkit-scroll-margin-top: 28vh;
+      -moz-scroll-margin-top: 28vh;
+      -ms-scroll-margin-top: 28vh;
     }
 
     h1 {
@@ -1158,6 +1194,9 @@ and (max-width: 430px) {
 
     .supportanchor {
       scroll-margin-top: 22vh;
+      -webkit-scroll-margin-top: 22vh;
+      -moz-scroll-margin-top: 22vh;
+      -ms-scroll-margin-top: 22vh;
     }
 
     h1{
@@ -1228,16 +1267,25 @@ and (orientation: landscape) {
   .callout {
     .calloutanchor {
       scroll-margin-top: 8vh;
+      -webkit-scroll-margin-top: 8vh;
+      -moz-scroll-margin-top: 8vh;
+      -ms-scroll-margin-top: 8vh;
     }
   }
   .about {
     .aboutanchor {
       scroll-margin-top: 10vh;
+      -webkit-scroll-margin-top: 10vh;
+      -moz-scroll-margin-top: 10vh;
+      -ms-scroll-margin-top: 10vh;
     }
   }
   .support {
     .supportanchor {
       scroll-margin-top: 10vh;
+      -webkit-scroll-margin-top: 10vh;
+      -moz-scroll-margin-top: 10vh;
+      -ms-scroll-margin-top: 10vh;
   }
   }
 }
