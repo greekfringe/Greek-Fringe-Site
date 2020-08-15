@@ -20,7 +20,7 @@ function Body() {
 
     query Images {
 
-      now01: file(relativePath: {eq: "now001.png"}) {
+      now01: file(relativePath: {eq: "thenow_00.jpg"}) {
         id
         childImageSharp {
           fluid {
@@ -28,7 +28,7 @@ function Body() {
           }
         }
       }
-      now02: file(relativePath: {eq: "now002.png"}) {
+      now02: file(relativePath: {eq: "thenow_01.jpg"}) {
         id
         childImageSharp {
           fluid {
@@ -36,7 +36,7 @@ function Body() {
           }
         }
       }
-      now03: file(relativePath: {eq: "now003.png"}) {
+      now03: file(relativePath: {eq: "thenow_02.jpg"}) {
         id
         childImageSharp {
           fluid {
@@ -44,7 +44,7 @@ function Body() {
           }
         }
       }
-      t01: file(relativePath: {eq: "tm001.png"}) {
+      t01: file(relativePath: {eq: "team_01.jpg"}) {
         id
         childImageSharp {
           fluid {
@@ -52,7 +52,7 @@ function Body() {
           }
         }
       }
-      t02: file(relativePath: {eq: "tm002.png"}) {
+      t02: file(relativePath: {eq: "team_02.jpg"}) {
         id
         childImageSharp {
           fluid {
@@ -60,7 +60,7 @@ function Body() {
           }
         }
       }
-      t03: file(relativePath: {eq: "tm003.png"}) {
+      t03: file(relativePath: {eq: "team_03.jpg"}) {
         id
         childImageSharp {
           fluid {
@@ -68,7 +68,7 @@ function Body() {
           }
         }
       }
-      t04: file(relativePath: {eq: "tm004.png"}) {
+      t04: file(relativePath: {eq: "team_04.jpg"}) {
         id
         childImageSharp {
           fluid {
@@ -76,7 +76,7 @@ function Body() {
           }
         }
       }
-      t05: file(relativePath: {eq: "tm005.png"}) {
+      t05: file(relativePath: {eq: "team_05.jpg"}) {
         id
         childImageSharp {
           fluid {
@@ -84,7 +84,7 @@ function Body() {
           }
         }
       }
-      t06: file(relativePath: {eq: "tm006.png"}) {
+      t06: file(relativePath: {eq: "team_06.jpg"}) {
         id
         childImageSharp {
           fluid {
@@ -92,7 +92,7 @@ function Body() {
           }
         }
       }
-      placeholder: file(relativePath: {eq: "placeholder00.jpg"}) {
+      placeholder: file(relativePath: {eq: "placeholder_00.jpg"}) {
         id
         childImageSharp {
           fluid (quality: 100){
@@ -100,7 +100,7 @@ function Body() {
           }
         }
       }
-      support: file(relativePath: {eq: "support00.png"}) {
+      support: file(relativePath: {eq: "supporters_00.png"}) {
         id
         childImageSharp {
           fluid (quality: 100){
@@ -120,7 +120,9 @@ function Body() {
       <div id="top" className={bodyStyles.top}></div>
       <TopBodyNav1 />
       <div className={bodyStyles.body}>
-{/* EVENTS SECTION ... */}
+        
+        {/* EVENTS SECTION ... */}
+
         <div className={bodyStyles.events}>
           <h7>
             An exploration of contemporary Hellenic diversity and innovation.
@@ -134,11 +136,12 @@ function Body() {
             />
             <div className="embed-container">
               <iframe
-                src="https://player.vimeo.com/video/442226983"
+                src="https://player.vimeo.com/video/442226983?autoplay=1"
                 allow="autoplay"
                 webkitallowfullscreen
                 mozallowfullscreen
                 allowFullScreen
+                allowAutoPlay
                 frameBorder={0}
               />
             </div>
@@ -146,11 +149,12 @@ function Body() {
           <div id="events" className={bodyStyles.eventsanchor}></div>
           <h1>
             Events</h1>
-          <h3>Greek Fringe Fest is all about unveiling independent artists who are not afforded the attention they deserve. Our mission is to curate events that do just that! Keep an eye on our page for upcoming events in Melbourne, Sydney, New York, Nicosia, Athens and who knows where else?! 
+          <h3>Greek Fringe is all about unveiling independent artists who are not afforded the attention they deserve. Our mission is to curate events that do just that! Keep an eye on our page for upcoming events in Melbourne, Sydney, New York, Nicosia, Athens and who knows where else?! 
           </h3>
         </div> 
         
-{/* WHATSON SECTION ... */}
+        {/* WHATSON SECTION ... */}
+
         <div className={bodyStyles.whatsON}>   
           <h5>What's on</h5>
           <div className={bodyStyles.on}>
@@ -159,7 +163,7 @@ function Body() {
                 <h4>DIGITAL EVENTS</h4>
               </div>            
               <div className={bodyStyles.column1}>
-                <p>Greek Fringe Fest is thrilled to present an interhemispheric collaboration, bringing together two award winning creative forces – the strikingly original Amalgamation Project (Cyprus) and prophetic poet and rapper, Luka Lesson (Australia).</p>
+                <p>Greek Fringe is thrilled to present an interhemispheric collaboration, bringing together two award winning creative forces – the strikingly original Amalgamation Project (Cyprus) and prophetic poet and rapper, Luka Lesson (Australia).</p>
                 <p>This promises to be a dynamic showcase of contemporary Hellenic diversity that connects young Creatives from the source with the diaspora.</p>
                 <p>These artists have pushed the boundaries within their own fields, and we are taking it a step further by merging art forms and continents in a digital presentation that lays claim to the NOW.</p>
               </div>
@@ -508,7 +512,7 @@ function Body() {
               <h4>Music - Visual - Performance - Words</h4> 
           </div>
         
-          <h3>The financial crisis in Europe has led Greece to emerge as a hub of creativity and innovative thinking. The Greek Fringe Fest is a movement that seeks to expose Greece and its booming arts scene and thrust attention upon diasporic art throughout the Globe. </h3>
+          <h3>The financial crisis in Europe has led Greece to emerge as a hub of creativity and innovative thinking. The Greek Fringe is a movement that seeks to expose Greece and its booming arts scene and thrust attention upon diasporic art throughout the Globe. </h3>
         <ArtistFeatured />
         {/* <div className={bodyStyles.seemore}>
           <h5>See More</h5>
@@ -877,7 +881,7 @@ function Body() {
             <div className={bodyStyles.textWithLines}>
               OUR VISION
             </div>
-            <p>It is time for the celebration of Greece, its people, history and art to shift to a new level. The Greek Fringe Fest (GFF) will attract talent that represents the experience of the modern Hellenic diversity. The GFF will shift beyond the folkloric representation of migration to explore the contemporary Hellenic diaspora throughout the Globe and the dynamic arts scene of mother Greece.</p>
+            <p>It is time for the celebration of Greece, its people, history and art to shift to a new level. The Greek Fringe (GFF) will attract talent that represents the experience of the modern Hellenic diversity. The GFF will shift beyond the folkloric representation of migration to explore the contemporary Hellenic diaspora throughout the Globe and the dynamic arts scene of mother Greece.</p>
           </div>
 
           <div className={bodyStyles.abouttxt2}>  
@@ -885,7 +889,7 @@ function Body() {
               CLAIMING THE NOW
             </div>
             <div>
-              <p>The financial crisis in Europe has led Greece to emerge as a hub of creativity and innovative thinking. The Greek Fringe Fest seeks to promote and celebrate contemporary culture, which can often be overshadowed by a glorified notion of the past.</p>
+              <p>The financial crisis in Europe has led Greece to emerge as a hub of creativity and innovative thinking. The Greek Fringe seeks to promote and celebrate contemporary culture, which can often be overshadowed by a glorified notion of the past.</p>
               <p>The GFF is a movement that will expose Greece and its booming arts scene and promote diasporic art across various forms of media. Though the theme is Greek, the festival aims to attract people who appreciate contemporary art and culture, regardless of their heritage.</p>
               <p>As humans evolve, so too does language, culture and influence. If we don’t engage with the evolving artscape of Greece and communities abroad, the risk is that Greek culture can become stagnant and obsolete. We are here to facilitate new and emerging interpretations of Greek culture. There is an appetite among younger generations of the diaspora to explore and connect with not only the Greece of their Grandparents but the Greece of now.</p>
               <p>We are here and we are claiming the now.</p>
@@ -911,7 +915,7 @@ function Body() {
                 alt="Con Kalamaras portrait"
               />
             </div>
-            <p>Professional insomniac, Con spends every waking hour thinking about Greek Fringe Fest and is constantly throwing ideas at Christina (his partner in crime) as they shape and mould the Festival into something exciting, fresh and evolving. Con is a first-generation Greek events producer/curator/practitioner based in Melbourne. His world circulates around art projects, concerts, and festivals including the Melbourne Rebetiko Festival. He lives and breathes music, producing radio and is seen to obsess over records and rare recordings. When not playing music, he juggles his life between the city and the country and is the proud owner of two chickens both called Greg and his cat, Minion Sassy Pants.</p>
+            <p>Professional insomniac, Con spends every waking hour thinking about Greek Fringe and is constantly throwing ideas at Christina (his partner in crime) as they shape and mould the Festival into something exciting, fresh and evolving. Con is a first-generation Greek events producer/ curator/ practitioner based in Melbourne. His world circulates around art projects, concerts, and festivals including the Melbourne Rebetiko Festival. He lives and breathes music, producing radio and is seen to obsess over records and rare recordings. When not playing music, he juggles his life between the city and the country and is the proud owner of two chickens both called Greg and his cat, Minion Sassy Pants.</p>
           </div>
 
           <div>
@@ -925,7 +929,7 @@ function Body() {
                 alt="Christina Bacchiella portrait"
               />
             </div>
-            <p>Founder of Sydney Greek Jam, Christina is big on community engagement and providing a platform for underrepresented artists. This concept was the genesis for Greek Fringe Fest and exposing hidden talents is what gives her a real buzz. She is an innovative coordinator of projects and people and has worked on a stack of indie events, including the Melbourne Rebetiko Festival. She plays percussion in a rebetiko band and strums the tzoura strictly in the confines of her loungeroom (much to her dog’s torment).</p>
+            <p>Founder of Sydney Greek Jam, Christina is big on community engagement and providing a platform for underrepresented artists. This concept was the genesis for Greek Fringe and exposing hidden talents is what gives her a real buzz. She is an innovative coordinator of projects and people and has worked on a stack of indie events, including the Melbourne Rebetiko Festival. She plays percussion in a rebetiko band and strums the tzoura strictly in the confines of her loungeroom (much to her dog’s torment).</p>
           </div>
 
           <div>
@@ -983,7 +987,7 @@ function Body() {
                 />
               </a>
             </div>
-            <p>Overdue Studio is a visual design studio creating thoughtful design solutions digitally and physically. From concept and design to realisation, the studio offers a full creative service in photography, branding, print, digital, object and exhibition design. It is Overdue Studio’s honour to collaborate with Greek Fringe Fest, together they promote music and culture with creativity and authenticity.</p>
+            <p>Overdue Studio is a visual design studio creating thoughtful design solutions digitally and physically. From concept and design to realisation, the studio offers a full creative service in photography, branding, print, digital, object and exhibition design. It is Overdue Studio’s honour to collaborate with Greek Fringe, together they promote music and culture with creativity and authenticity.</p>
           </div>
 
         </div>
@@ -1009,7 +1013,7 @@ function Body() {
           </div>
 
           <div class={bodyStyles.sponsors}>
-            <h3>Greek Fringe Fest is powered by</h3>
+            <h3>Greek Fringe is powered by</h3>
             <Img 
               fluid = {data.support.childImageSharp.fluid}  
               alt="Overdue Studio portrait"

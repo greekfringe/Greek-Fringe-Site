@@ -22,7 +22,7 @@ function ArtistFeatured (){
               type
               link
               description
-                    featuredImage {
+                    featuredImg {
                       childImageSharp {
                         fluid {
                           ...GatsbyImageSharpFluid
@@ -48,7 +48,7 @@ function ArtistFeatured (){
 
               <div className={featuredStyles.img}>
                   <Img 
-                    fluid = {edge.node.frontmatter.featuredImage.childImageSharp.fluid}
+                    fluid = {edge.node.frontmatter.featuredImg.childImageSharp.fluid}
                   />
               </div>
 
@@ -62,7 +62,7 @@ function ArtistFeatured (){
                   <p>{edge.node.frontmatter.description}</p>
                 </div> 
                 <a href={edge.node.frontmatter.link} target="_blank" rel="noreferrer">
-                  <button class="buttonW">LEARN MORE</button> 
+                  <button className="buttonW">LEARN MORE</button> 
                 </a>        
               </div>
             </div>

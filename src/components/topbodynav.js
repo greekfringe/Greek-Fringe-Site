@@ -7,7 +7,7 @@ function Body() {
   return (
     <div className={topBodyNavStyles.wrapper}>
       <div className={topBodyNavStyles.container}>
-        <a href="https://twitter.com/greekfringe" target="_blank" rel="noreferrer" class={topBodyNavStyles.socialico}>
+        <a href="https://twitter.com/greekfringe" target="_blank" rel="noreferrer" className={topBodyNavStyles.socialico}>
           <svg viewBox="0 0 15.667 15.667">
           <path
             d="M7.833 15.667a7.833 7.833 0 117.833-7.833 7.842 7.842 0 01-7.833 7.833zm0-14.488a6.654 6.654 0 106.654 6.655 6.662 6.662 0 00-6.654-6.655z"
@@ -19,7 +19,7 @@ function Body() {
           />
         </svg>
         </a>
-        <a href="https://www.facebook.com/greekfringe/" target="_blank" rel="noreferrer" class={topBodyNavStyles.socialico}>
+        <a href="https://www.facebook.com/greekfringe/" target="_blank" rel="noreferrer" className={topBodyNavStyles.socialico}>
           <svg viewBox="0 0 24.273 24.273">
           <defs>
             <style>{".a,.b{fill:#1a1818;}.b{fill-rule:evenodd;}"}</style>
@@ -36,7 +36,7 @@ function Body() {
           />
           </svg>
         </a>
-        <a href="https://www.instagram.com/greekfringe/" target="_blank" rel="noreferrer" class={topBodyNavStyles.socialico}>
+        <a href="https://www.instagram.com/greekfringe/" target="_blank" rel="noreferrer" className={topBodyNavStyles.socialico}>
           <svg viewBox="0 0 24.273 24.273">
           <defs>
             <style>{".a{fill:#1a1818;fill-rule:evenodd;}"}</style>
@@ -53,7 +53,7 @@ function Body() {
           />
           </svg>
         </a>
-        <a href="mailto:greekfringe@gmail.com" target="_blank" rel="noreferrer" class={topBodyNavStyles.socialico}>
+        <a href="mailto:greekfringe@gmail.com" target="_blank" rel="noreferrer" className={topBodyNavStyles.socialico}>
           <svg viewBox="0 0 24.273 16.999">
           <defs>
             <style>{".a{fill:#1a1818;}"}</style>
@@ -70,7 +70,7 @@ function Body() {
           />
           </svg>
         </a>    
-        <a href="https://www.patreon.com/greekfringefest" target="_blank" rel="noreferrer" class={topBodyNavStyles.patron}>
+        <a href="https://www.patreon.com/greekfringefest" target="_blank" rel="noreferrer" className={topBodyNavStyles.patron}>
           <svg viewBox="0 0 132 24">
           <text
             transform="translate(-1668 -18) translate(75) translate(1658 34)"

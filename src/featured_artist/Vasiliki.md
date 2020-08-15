@@ -12,7 +12,7 @@ description: |
 
   She has performed as a solo artist and with her band in places throughout the world including: Hong Kong, Qatar, Italy, France, Cyprus and Greece, the United Kingdom, Turkey, Austria, Germany and Lebanon. Vasilikí’s love for polyphonic folk music prompted her to create the all-female a capella ‘Amalgamation’ choir. Samples of their work have travelled around the globe through Youtube with millions of views. The band and choir rarely perform together but they’ve put together their favourite songs for a Greek Fringe Fest exclusive. Vasilikí has a great love for the human voice and has recently founded the Cyprus Voice Centre, a platform for connecting voice professionals. She is an active performer and a coach in theatre productions and a lecturer at the European University of Cyprus.
 
-featuredImage: ../images/fa_img/fa_000.jpg
+featuredImg: ../images/fa_img/artist_00.jpg
 ---
 
 
