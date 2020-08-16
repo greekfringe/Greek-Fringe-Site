@@ -929,7 +929,7 @@ function Body() {
             <div className={bodyStyles.textWithLines}>
               OUR VISION
             </div>
-            <p>It is time for the celebration of Greece, its people, history and art to shift to a new level. The Greek Fringe (GFF) will attract talent that represents the experience of the modern Hellenic diversity. The GFF will shift beyond the folkloric representation of migration to explore the contemporary Hellenic diaspora throughout the Globe and the dynamic arts scene of mother Greece.</p>
+            <p>It is time for the celebration of Greece, its people, history and art to shift to a new level. The Greek Fringe will attract talent that represents the experience of the modern Hellenic diversity. The Greek Fringe will shift beyond the folkloric representation of migration to explore the contemporary Hellenic diaspora throughout the Globe and the dynamic arts scene of mother Greece.</p>
           </div>
 
           <div className={bodyStyles.abouttxt2}>  
@@ -938,7 +938,7 @@ function Body() {
             </div>
             <div>
               <p>The financial crisis in Europe has led Greece to emerge as a hub of creativity and innovative thinking. The Greek Fringe seeks to promote and celebrate contemporary culture, which can often be overshadowed by a glorified notion of the past.</p>
-              <p>The GFF is a movement that will expose Greece and its booming arts scene and promote diasporic art across various forms of media. Though the theme is Greek, the festival aims to attract people who appreciate contemporary art and culture, regardless of their heritage.</p>
+              <p>The Greek Fringe is a movement that will expose Greece and its booming arts scene and promote diasporic art across various forms of media. Though the theme is Greek, the festival aims to attract people who appreciate contemporary art and culture, regardless of their heritage.</p>
               <p>As humans evolve, so too does language, culture and influence. If we don’t engage with the evolving artscape of Greece and communities abroad, the risk is that Greek culture can become stagnant and obsolete. We are here to facilitate new and emerging interpretations of Greek culture. There is an appetite among younger generations of the diaspora to explore and connect with not only the Greece of their Grandparents but the Greece of now.</p>
               <p>We are here and we are claiming the now.</p>
             </div>
