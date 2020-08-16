@@ -36,7 +36,11 @@ function Menu() {
     <div className={menuStyles.wrapper}>
 
         <div className={menuStyles.column1}>
-          <div className={menuStyles.logoSVG}>
+          <div className={menuStyles.logoSVG}
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-duration="400"
+          data-sal-easing="ease">
             <svg data-name="Layer 1" viewBox="0 0 570 280" onClick={() => scrollTo('#top')}>
             <defs>
               <style>{"a011{fill:#231f20}"}</style>
@@ -51,7 +55,11 @@ function Menu() {
         
         <div className={menuStyles.column2}>
 
-          <div className={menuStyles.stairsSVG}>
+          <div className={menuStyles.stairsSVG}
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-duration="400"
+          data-sal-easing="ease">
             <Img 
               fluid = {data.stair.childImageSharp.fluid}  
               alt="Biautifull stair logo representing Greece ireland's infinite stairs"
@@ -60,7 +68,11 @@ function Menu() {
 
           <div className={menuStyles.linkContainer}>
 
-            <div className={menuStyles.windowSVG}>
+            <div className={menuStyles.windowSVG}
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-duration="400"
+            data-sal-easing="ease">
               <Img 
                 fluid = {data.window.childImageSharp.fluid}  
                 alt="Biautifull stair logo representing Greece ireland's infinite stairs"

@@ -36,50 +36,51 @@ body {
   }
 
   form {
-    margin: 2.7vw;
+    height: auto;
+    margin: 3.7vw 5vw 5vw 5vw;
     display: flex;
     flex-direction: column;
 
     .description {
       display: flex;
-      flex-direction: row;
-      margin-bottom: 8.6vh;
+      flex-direction: column;
+      margin-bottom: 6.6vh;
 
       div {
         .textWithLines {
           h4 {
-            white-space: nowrap;
+            margin: 10px 0;
           }
         }
       }
 
       p {
         width: auto;
-        margin-left: 4.8vw;
       }
 
       p:first-child {
-        margin-top: 0;
+        margin-top: 4vh;
       }
     }
   
     .input {
   
       width: auto;
-      height: 4vh;
-      margin-bottom: 4.62vh;
+      height: 8vh;
+      margin-bottom: 4vh;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
   
       p {
-        white-space: nowrap;
+        height: auto;
         line-height: 22px;
-        margin: auto 3.8vw auto 0;
+        margin: 0;
       }
   
       input {
         width: 100%;
-        margin: 0 0 0 auto;
+        height: 4.5vh;
+        margin: 1vh 0 0 auto;
         padding-left: 23px;
         border-radius: 50px;
         font-family: inherit;
@@ -90,6 +91,10 @@ body {
         outline: none;
         border-color:#EF4423;
         box-shadow:0 0 5px #EF4423;
+      }
+
+      input::placeholder {
+        opacity: 0.3;
       }
 
       /* Chrome, Safari, Edge, Opera */
@@ -118,33 +123,14 @@ body {
       }
     }
   
-    .column {
-      height: 100%;
-      flex-direction: column;
-  
-      p {
-        height: 4vh;
-      }
-  
-      input {
-        width: auto;
-        margin: 0;
-        height: 4vh;
-        padding-left: 23px;
-      }
-  
-      input::placeholder {
-        padding-left: 20px;
-      }
-    }
-  
     .square {
-  
+      height: auto;
+
       textarea {
         width: auto;
         height: 13vh;
         display: inline;
-        margin: 0;
+        margin: 1vh 0 0 0;
         padding: 23px;
         border: solid 1px #EF4423;
         resize: none;
@@ -156,6 +142,7 @@ body {
         padding: 23px 0 0 23px;
         vertical-align: top;
         display: inline;
+        opacity: 0.3;
       }
   
       textarea:focus {
@@ -179,6 +166,7 @@ body {
       justify-content: flex-end;
       button {
         width: auto;
+        height: auto;
         min-width: 10.7vw;
         margin: 4.6vh 0 0 2vw;  
       }
@@ -203,8 +191,6 @@ body {
   border-bottom: 1px solid black;
 }
 
-// BREAKPOINTS ... 
-
 //IPADS
 @media only screen 
 and (max-width: 1024px) {
@@ -219,13 +205,15 @@ and (min-width: 0px)
 and (max-width: 430px) {
   .wrapper {
     margin: 0;
+
     .header {
       position: fixed;
-      height: 200px;
+      height: 100px;
+
       .container {
-        margin: 4.6vh 5.5vw 13vh 5.5vw;
+        margin: 4vw 5vw 4vw 5vw;
         .logo {
-          width: 41vw;
+          width: 30vw;
         }
         .stairs {
           display: none;
@@ -234,116 +222,12 @@ and (max-width: 430px) {
     }
 
     form {
-      margin: 223px 5.5vw 3.5vh 5.5vw;
-      .description {
-        flex-direction: column;
-        margin-bottom: 6.4vh;
-        .textWithLines {
-          margin-bottom: 5.5vh;
-          h4 {
-            margin: 2vh 0;
-          }
-        }
-        div{
-          p{
-            margin-left: 0;
-          }
-        }
-      }
-
-      .input {
-        height: 100%;
-        flex-direction: column;
-        p {
-          height: 4vh;
-          white-space: pre-wrap;
-        }    
-        input {
-          width: auto;
-          margin: 0;
-          height: 4vh;
-          padding-left: 23px;
-        }
-    
-        input::placeholder {
-          padding-left: 20px;
-        }
-      }
-
-      .input:nth-child(11) {
-        textarea{
-          margin-top: 18px;
-        }
-      }
+      margin-top: 140px;
     }
+
   }
 }
 
-@media only screen 
-and (min-width: 0px) 
-and (max-width: 900px)
-and (orientation: landscape) {
-  .wrapper {
-    margin: 0;
-    .header {
-      position: fixed;
-      height: 120px;
-      .container {
-        margin: 4.6vh 5.5vw 13vh 5.5vw;
-        .logo {
-          width: 15vw;
-        }
-        .stairs {
-          display: none;
-        }
-      }
-    }
-
-    form {
-      margin: 163px 5.5vw 3.5vh 5.5vw;
-      .description {
-        flex-direction: column;
-        margin-bottom: 6.4vh;
-        .textWithLines {
-          margin-bottom: 5.5vh;
-          h4 {
-            margin: 2vh 0;
-          }
-        }
-        div{
-          p{
-            margin-left: 0;
-          }
-        }
-      }
-
-      .input {
-        height: 100%;
-        flex-direction: column;
-        p {
-          height: 8vh;
-          white-space: pre-wrap;
-        }    
-        input {
-          width: auto;
-          margin: 0;
-          height: 8vh;
-          padding-left: 23px;
-        }
-    
-        input::placeholder {
-          padding-left: 20px;
-        }
-      }
-
-      .square {
-        textarea {
-          height: 26vh;
-        }
-      }
-    }
-  }  
-}
 
 
 

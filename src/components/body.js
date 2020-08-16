@@ -118,17 +118,24 @@ function Body() {
   return (
     <div id="top" className={bodyStyles.wrapper}>
       <div className={bodyStyles.top}></div>
-      <TopBodyNav1 />
+        <TopBodyNav1 />
       <div className={bodyStyles.body}>
         
         {/* EVENTS SECTION ... */}
 
         <div className={bodyStyles.events}>
-          <h7>
+          <h7 data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-duration="800"
+            data-sal-easing="ease">
             An exploration of contemporary Hellenic diversity and innovation.
           </h7>
           <div id="eventsM" className={bodyStyles.anchorM}></div>
-          <div className={bodyStyles.video}>
+          <div className={bodyStyles.video} 
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-duration="800"
+            data-sal-easing="ease">
               <style
               dangerouslySetInnerHTML={{
                 __html:
@@ -149,7 +156,11 @@ function Body() {
             </div>
           </div>          
           <div id="events" className={bodyStyles.eventsanchor}></div>
-          <h1>
+          <h1
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-duration="800"
+          data-sal-easing="ease">
             Events</h1>
           <h3>Greek Fringe is all about unveiling independent artists who are not afforded the attention they deserve. Our mission is to curate events that do just that! Keep an eye on our page for upcoming events in Melbourne, Sydney, New York, Nicosia, Athens and who knows where else?! 
           </h3>
@@ -184,11 +195,19 @@ function Body() {
         <div className={bodyStyles.stream}>
 
           <div className={bodyStyles.streamTitle}>
-            <h2>
+            <h2
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-duration="800"
+            data-sal-easing="ease">
               Amalgamation Project (CY) + Luka Lesson (AU)
             </h2>
           </div>
-          <div className={bodyStyles.video}>
+          <div className={bodyStyles.video}
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-duration="800"
+          data-sal-easing="ease">
             <Img 
               fluid = {data.placeholder.childImageSharp.fluid}  
               alt="Athens house's main door full of graffiti"
@@ -198,7 +217,11 @@ function Body() {
               <div className={bodyStyles.time}>
                 8:30pm-9:30pm (AEST) 28 August, 2020
               </div>
-              <div className={bodyStyles.streambtn}>
+              <div className={bodyStyles.streambtn}
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="800"
+              data-sal-easing="ease">
                 <a href="https://www.facebook.com/greekfringe/" target="_blank" rel="noreferrer"><button className={bodyStyles.free} type="button" aria-label="Watch Live Stream on GFF's Facebook"><p>WATCH LIVE STREAM</p></button></a>
                 <a href="https://www.stickytickets.com.au/fdqoh/greek_fringe_fest__amalgamation_project_cy__luka_lesson_au.aspx" target="_blank" rel="noreferrer"><button className="buttonOrange" type="button" aria-label="Support Artist">SUPPORT THE ARTISTS</button>
                 </a> 
@@ -511,7 +534,11 @@ function Body() {
         <div className={bodyStyles.featured}>  
           <div id="featured" className={bodyStyles.featuredanchor}></div>
           <div className={bodyStyles.title}>
-              <h1>Featured Artists</h1>
+              <h1
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="800"
+              data-sal-easing="ease">Featured Artists</h1>
               <h4>Music - Visual - Performance - Words</h4> 
           </div>
         
@@ -683,7 +710,11 @@ function Body() {
         {/* <div id="callout" className={bodyStyles.calloutanchor}></div> */}
         <div id="callout" className={bodyStyles.callout}>
           
-          <h1>Artist Callout</h1>
+          <h1
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-duration="800"
+          data-sal-easing="ease">Artist Callout</h1>
 
           <div className={bodyStyles.callouttxt}>
             <p><h3>What we’re looking for?</h3></p>
@@ -693,7 +724,11 @@ function Body() {
 
           <div className={bodyStyles.preferenceto}>
 
-            <h2>We give preference to work that:</h2>
+            <h2
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-duration="800"
+            data-sal-easing="ease">We give preference to work that:</h2>
 
             <div className={bodyStyles.textWithLinesRedOut}>
               <h3>Represents the experience of the modern Hellenic diversity</h3>
@@ -709,7 +744,11 @@ function Body() {
                 <p>Make sure your work is a good fit for our platform (and that we’re a good fit for you). Take a look at our <b>About</b> section to get a feel for what we do.</p>
 
                 <Link to="/form">
-                  <button>APPLY NOW</button>
+                  <button
+                  data-sal="slide-up"
+                  data-sal-delay="300"
+                  data-sal-duration="800"
+                  data-sal-easing="ease">APPLY NOW</button>
                 </Link>
               
             </div>
@@ -877,7 +916,11 @@ function Body() {
       <div className={bodyStyles.body}>
         <div className={bodyStyles.about}>
         <div id="about" className={bodyStyles.aboutanchor}></div>  
-        <h1>About</h1>
+        <h1
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-duration="800"
+        data-sal-easing="ease">About</h1>
 
         
         <div className={bodyStyles.abouttxt}>  
@@ -911,7 +954,11 @@ function Body() {
 
           <div>
             <div className={bodyStyles.teamtitle}>
-              <h3>Con Kalamaras</h3>
+              <h3
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="600"
+              data-sal-easing="ease">Con Kalamaras</h3>
               <p>Co-founder &amp; Director</p>
             </div>  
             <div className={bodyStyles.teamimg}>
@@ -925,7 +972,11 @@ function Body() {
 
           <div>
             <div className={bodyStyles.teamtitle}>
-              <h3>Christina Bacchiella</h3>
+              <h3
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="700"
+              data-sal-easing="ease">Christina Bacchiella</h3>
               <p>Co-founder &amp; Director</p>
             </div>  
             <div className={bodyStyles.teamimg}>
@@ -939,7 +990,11 @@ function Body() {
 
           <div>
             <div className={bodyStyles.teamtitle}>
-              <h3>Michael Alexandratos</h3>
+              <h3
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="800"
+              data-sal-easing="ease">Michael Alexandratos</h3>
               <p>Content Producer | Words</p>
             </div>  
             <div className={bodyStyles.teamimg}>
@@ -953,7 +1008,11 @@ function Body() {
 
           <div>
             <div className={bodyStyles.teamtitle}>
-              <h3>Vasilki Tsouka</h3>
+              <h3
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="600"
+              data-sal-easing="ease">Vasilki Tsouka</h3>
               <p>Content Producer | Performance</p>
             </div>  
             <div className={bodyStyles.teamimg}>
@@ -967,7 +1026,11 @@ function Body() {
 
           <div>
             <div className={bodyStyles.teamtitle}>
-              <h3>Kon Karamountzos</h3>
+              <h3
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="700"
+              data-sal-easing="ease">Kon Karamountzos</h3>
               <p>Audiovisual Production</p>
             </div>
             <div className={bodyStyles.teamimg}>
@@ -981,7 +1044,11 @@ function Body() {
 
           <div>
             <div className={bodyStyles.teamtitle}>
-              <a href="mailTo:info@overduestudio.co"><h3>Overdue Studio</h3></a>
+              <a href="mailTo:info@overduestudio.co"><h3
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="800"
+              data-sal-easing="ease">Overdue Studio</h3></a>
               <p>Art Director / Visual Design</p>
             </div>            
             <div className={bodyStyles.teamimg}>
@@ -992,7 +1059,7 @@ function Body() {
                 />
               </a>
             </div>
-            <p>Overdue Studio is a visual design studio creating thoughtful design solutions digitally and physically. From concept and design to realisation, the studio offers a full creative service in photography, branding, print, digital, object and exhibition design. It is Overdue Studio’s honour to collaborate with Greek Fringe, together they promote music and culture with creativity and authenticity.</p>
+            <p>Overdue Studio is a visual design studio creating thoughtful design solutions digitally and physically. From concept and design to realisation, the studio offers a full creative service in photography, branding, print, digital, object and exhibition design. It is Overdue Studio’s honour to collaborate with Greek Fringe, together they promote music and culture with creativity and authenticity.<br/><b><a href="mailTo:info@overduestudio.co">Contact us for design enquiries.</a></b></p>
             <div id="supportM" className={bodyStyles.anchorM}></div>
           </div>
         </div>
@@ -1004,12 +1071,20 @@ function Body() {
         <div className={bodyStyles.support}>
 
           <div id="support" className={bodyStyles.supportanchor}></div>      
-          <h1>Support</h1>
+          <h1
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-duration="800"
+          data-sal-easing="ease">Support</h1>
           
             <p><h3>We LURVE our sponsors! They are the force that enables us to shed light on the obscure, the underrepresented and the mega-talented. Its thanks to them that we can explore what contemporary Hellenic culture can bring to the table beyond cuisine.</h3></p>
             <p><h3>If this strikes a chord with you, get on board and…</h3></p>
 
-          <div className={bodyStyles.supportbtn}>  
+          <div className={bodyStyles.supportbtn}
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-duration="800"
+          data-sal-easing="ease">  
             <a href="https://www.patreon.com/greekfringefest" target="_blank" rel="noreferrer"><button className="buttonOrange" type="button" aria-label="Become a Patron">BECOME A PATRON</button></a>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
               <input type="hidden" name="cmd" value="_s-xclick" />
@@ -1023,6 +1098,10 @@ function Body() {
             <Img 
               fluid = {data.support.childImageSharp.fluid}  
               alt="Overdue Studio portrait"
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="800"
+              data-sal-easing="ease"
             />
             <p> © 2019 Greek Fringe Fest Pty Ltd.  All rights reserved. </p>    
           </div>          

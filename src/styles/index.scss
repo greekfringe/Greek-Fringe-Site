@@ -202,14 +202,14 @@ p {
 
   p {
     font-family: inherit;
-    font-size: calc( 22px + 1.2vw);
+    font-size: calc( 20px + 1.2vw);
     line-height: 78px;
   }
 }
 
 .animation-container {
-  width: 5.2vw;
-  height: 9.2vh;
+  width: 7.2vw;
+  height: auto;
 }
 
 @media only screen and (max-width: 1024px) {

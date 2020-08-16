@@ -44,9 +44,17 @@ function ArtistFeatured (){
           return (
             <div className={featuredStyles.wrapper}>
 
-              <h2>{edge.node.frontmatter.name}</h2> 
+              <h2
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="800"
+              data-sal-easing="ease">{edge.node.frontmatter.name}</h2> 
 
-              <div className={featuredStyles.img}>
+              <div className={featuredStyles.img}
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="500"
+              data-sal-easing="ease">
                   <Img 
                     fluid = {edge.node.frontmatter.featuredImg.childImageSharp.fluid}
                   />
@@ -62,7 +70,11 @@ function ArtistFeatured (){
                   <p>{edge.node.frontmatter.description}</p>
                 </div> 
                 <a href={edge.node.frontmatter.link} target="_blank" rel="noreferrer">
-                  <button className="buttonW">LEARN MORE</button> 
+                  <button className="buttonW"
+                  data-sal="slide-up"
+                  data-sal-delay="300"
+                  data-sal-duration="800"
+                  data-sal-easing="ease">LEARN MORE</button> 
                 </a>        
               </div>
             </div>

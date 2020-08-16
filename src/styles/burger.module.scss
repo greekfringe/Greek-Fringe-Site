@@ -1,45 +1,72 @@
-// //MENU STYLES ... 
-// .wrapper {
-//   width: 100vw;
-//   height: 100vh;
-//   position: fixed;
-//   padding: 7vw 5vw 7vw 5vw;
-//   display: none;
-//   flex-direction: column;
-//   overflow: hidden;
-//   z-index: 999;
-//   background-color: #EF4423; 
 
-// .row1 {
-//   height: 100%;
-//   display: flex;
-//   flex-direction: row;
-//   margin-bottom: 15vw;
+  .wrapper {
+    display: grid;
+    grid-template: 8vh/ 100vw;
+    background-color: #EF4423;
+  
+  .container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 0 0 auto;
+  
+    .socialico {
+      margin: auto auto auto 0;
+      svg {
+        width: 24px;
+        height: auto;
+        margin: auto 0;
+      }
+    }
 
-//   .logoSVG {
-//     width: 25vh;
-//     height: auto;
-//   }
+    .patreonbtn {
+      margin:  auto 5vw auto auto;
+      padding: 8px;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 12px;
+      color: black;
+      border: 2px solid black;
+    }
+  
+    .patron {
+      margin: auto 0 auto auto;
+      svg {
+        width: auto;
+        height: 24px;
+        margin: auto 0;
+        transition: transform 150ms ease;
+    
+        text {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          transition: color 250ms ease-in-out;
+        }
+        
+      }
+    
+      svg:active {
+        transform: scale(0.96);
+      }
+    }
+  
+    span {
+      width: 5.6vw;
+    }
 
-//   .cross {
-//     width: 13vw;
-//     height: auto;
-//     margin: 0 0 0 auto;
-//     cursor: pointer;
-//       // TODO MAKE IT TRANSFORM
-//     svg {
-//       // transform: rotate(45deg);
-//     }
-//   }
-// }
-
-//   .row2 {
-//     width: auto;
-//     display: none; 
-//     margin-bottom: 7vw;
-//     background-color: lightgreen;
-//   }
-// }
+    a {
+      margin: auto 0 auto 0;
+      padding: auto 0;
+    }
+  
+  }
+}
+  
 
 .row3 {
   height: 100%;
@@ -51,7 +78,7 @@
 }
 
 .stairsSVG {
-  width: 17vh;
+  width: 12vh;
   height: auto;
   margin: auto 10vw 0 0;
   svg {
@@ -64,9 +91,9 @@
   width: auto;
   display: flex;
   flex-direction: column;
-  margin: auto 5vw 0 auto;
+  margin: auto 0 0 auto;
   .windowSVG {
-    width: 15vh;
+    width: 10vh;
     margin: 0 0 5.3vh 0;
   }
   .linkList {

@@ -39,7 +39,11 @@ function Form () {
         <div className={formStyles.container}>
         {/* LOGO SVG ... */}
           <Link to="/">  
-          <div className={formStyles.logo}>
+          <div className={formStyles.logo}
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-duration="400"
+          data-sal-easing="ease">
             <svg data-name="Layer 1" viewBox="0 0 570 280">
             <defs>
               <style>{"a011{fill:#231f20}"}</style>
@@ -85,8 +89,7 @@ function Form () {
             </div>
           </div>
           <div>
-            <p>Make sure your work is a good fit for our platform (and that we’re a good fit for you). Take a look at our About section to get a feel for what we do.</p>
-            <p>Fill in the form below with a description of yourself and the type of work you wish to put forward.</p>
+            <p>Make sure your work is a good fit for our platform (and that we’re a good fit for you). Take a look at our About section to get a feel for what we do. Fill in the form below with a description of yourself and the type of work you wish to put forward.</p>
           </div>
         </div>
 
@@ -147,7 +150,7 @@ function Form () {
                     
           </div>
 
-          <div class={cx(formStyles.input, formStyles.optional, formStyles.column)}>
+          <div class={cx(formStyles.input, formStyles.optional)}>
             
               <p>Please provide link to samples of your work</p>
             
@@ -155,7 +158,7 @@ function Form () {
                     
           </div>
 
-          <div class={cx(formStyles.input, formStyles.optional, formStyles.column, formStyles.square)}>
+          <div class={cx(formStyles.input, formStyles.optional, formStyles.square)}>
             
               <p>Why do you think your work would fit in Greek Fringe</p>
             
@@ -163,7 +166,7 @@ function Form () {
                     
           </div>
 
-          <div class={cx(formStyles.input, formStyles.optional, formStyles.column, formStyles.square)}>
+          <div class={cx(formStyles.input, formStyles.optional, formStyles.square)}>
             
               <p>Please describe the work you wish to present at Greek Fringe</p>
             
@@ -171,7 +174,7 @@ function Form () {
                     
           </div>
 
-          <div class={cx(formStyles.input, formStyles.optional, formStyles.column)}>
+          <div class={cx(formStyles.input, formStyles.optional)}>
             
               <p>Where did you find out the Greek Fringe?</p>
             
