@@ -7,6 +7,7 @@ import Body from "../components/body"
 
 //STYLES ...
 import "../styles/index.scss"
+import Headroom from "react-headroom"
 
 function App() {
   return (

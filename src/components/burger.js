@@ -9,9 +9,9 @@ import burgerStyles from "../styles/burger.module.scss"
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: ${({ div }) => (div ? "100vh" : "140px")};
+  height: ${({ div }) => (div ? "100vh" : "100px")};
   position: fixed;
-  padding: 7vw 5vw 7vw 5vw;
+  padding: 4vw 5vw 4vw 5vw;
   display: none;
   z-index: 4;
   flex-direction: column;
@@ -35,14 +35,14 @@ const Row1 =  styled.div`
 
 const Logo = styled.a`
   svg {
-    width: 27vh;
+    width: 30vw;
     height: auto;
   }
 `
 const Cross = styled.div`
-  width: 13vw;
+  width: 10vw;
   height: auto;
-  margin: 0 0 0 auto;
+  margin: auto 0 auto auto;
   cursor: pointer;
     svg {
       transform: ${({div}) => (div ? "rotate(45deg)" : "")};
@@ -156,19 +156,19 @@ function Burger() {
             <div className={burgerStyles.linkList}>
               <ol>
                 <li>
-                  <button className={burgerStyles.menubtn} onClick={() => {scroll('#events');close();}}>Events</button>
+                  <button className={burgerStyles.menubtn} onClick={() => {scroll('#eventsM');close();}}>Events</button>
                 </li>
                 <li> 
-                  <button className={burgerStyles.menubtn} onClick={() => {scroll('#featured');close();}}>Featured Artists</button>
+                  <button className={burgerStyles.menubtn} onClick={() => {scroll('#featuredM');close();}}>Featured Artists</button>
                 </li>
                 <li> 
-                  <button className={burgerStyles.menubtn} onClick={() => {scroll('#callout');close();}}>Artist Callout</button>
+                  <button className={burgerStyles.menubtn} onClick={() => {scroll('#calloutM');close();}}>Artist Callout</button>
                 </li>
                 <li>
-                <button className={burgerStyles.menubtn} onClick={() => {scroll('#about');close();}}>About</button>
+                <button className={burgerStyles.menubtn} onClick={() => {scroll('#aboutM');close();}}>About</button>
                 </li>
                 <li> 
-                  <button  className={burgerStyles.menubtn} onClick={() => {scroll('#support');close();}}>Support</button>
+                  <button  className={burgerStyles.menubtn} onClick={() => {scroll('#supportM');close();}}>Support</button>
                 </li>
               </ol>
             </div>

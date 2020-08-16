@@ -116,8 +116,8 @@ function Body() {
 
 
   return (
-    <div className={bodyStyles.wrapper}>
-      <div id="top" className={bodyStyles.top}></div>
+    <div id="top" className={bodyStyles.wrapper}>
+      <div className={bodyStyles.top}></div>
       <TopBodyNav1 />
       <div className={bodyStyles.body}>
         
@@ -127,6 +127,7 @@ function Body() {
           <h7>
             An exploration of contemporary Hellenic diversity and innovation.
           </h7>
+          <div id="eventsM" className={bodyStyles.anchorM}></div>
           <div className={bodyStyles.video}>
               <style
               dangerouslySetInnerHTML={{
@@ -137,7 +138,7 @@ function Body() {
             <div className="embed-container">
               <iframe
                 title="vimeo intro video"
-                src="https://player.vimeo.com/video/442226983?autoplay=1"
+                src="https://player.vimeo.com/video/442226983?autoplay=1&muted=1&loop=1"
                 allow="autoplay"
                 webkitallowfullscreen
                 mozallowfullscreen
@@ -146,7 +147,7 @@ function Body() {
                 frameBorder={0}
               />
             </div>
-          </div>
+          </div>          
           <div id="events" className={bodyStyles.eventsanchor}></div>
           <h1>
             Events</h1>
@@ -228,6 +229,7 @@ function Body() {
       </div>
 
       {/* ......... SECTION DIVIDER ......... */}
+      <div id="featuredM"></div>
       <div className={bodyStyles.TheNowPhone}>
             <svg viewBox="0 0 762 771.387">
         <defs>
@@ -524,6 +526,7 @@ function Body() {
       </div>  
       
       {/* ......... SECTION DIVIDER ......... */}
+      <div id="calloutM"></div>
       <div className={bodyStyles.TheNowPhone}>
           <Img 
             className={bodyStyles.img}
@@ -665,7 +668,7 @@ function Body() {
         </svg>
           </div>
         {/* </div> */}
-        <div className={bodyStyles.TheNowImg}>
+        <div id="calloutM" className={bodyStyles.TheNowImg}>
           <Img 
             fluid = {data.now02.childImageSharp.fluid}  
             alt="Athens house's main door full of graffiti"
@@ -719,6 +722,7 @@ function Body() {
       
       
        {/* ......... SECTION DIVIDER ......... */}
+       <div id="aboutM"></div>
        <div className={bodyStyles.TheNowPhone}>
           <Img 
             className={bodyStyles.img}
@@ -989,10 +993,11 @@ function Body() {
               </a>
             </div>
             <p>Overdue Studio is a visual design studio creating thoughtful design solutions digitally and physically. From concept and design to realisation, the studio offers a full creative service in photography, branding, print, digital, object and exhibition design. It is Overdue Studio’s honour to collaborate with Greek Fringe, together they promote music and culture with creativity and authenticity.</p>
+            <div id="supportM" className={bodyStyles.anchorM}></div>
           </div>
-
         </div>
       </div>
+    
 
 {/* SUPPORT SECTION ... */}
 

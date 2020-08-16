@@ -1,9 +1,10 @@
 .wrapper {
   position: fixed;
   display: grid;
-  grid-template: 9vh/ 100vw;
+  grid-template: 8vh/ 100vw;
   justify-content: right;
-  background-color: transparent;
+  background-color: white;
+  opacity: 0.8;
   z-index: 2;
 }
 
@@ -61,36 +62,7 @@ and (min-width: 0px)
 and (max-width: 430px) {
 
   .wrapper {
-    width: 100vw;
-    margin: 139px 0 0 0;
-    background-color: #EF4423;
-    opacity: 1;
-    z-index: 3;
-
-    .container {
-      width: 100vw;
-      justify-content: space-evenly;
-
-      .socialico {
-        margin: auto;
-        svg {
-          width: 4.5vw;
-          height: auto;
-        }
-      }
-
-      .patron {
-        margin: auto;
-        svg {
-          width: auto;
-          height: 2.5vh;
-        }
-      }
-      
-    }
-    span {
-      width: 0;
-    }
+    display: none;
   }
 }
 

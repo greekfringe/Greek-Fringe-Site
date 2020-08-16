@@ -7,8 +7,6 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  overflow: scroll;
-	scroll-snap-type: y proximity;
 }
 
 .body {
@@ -105,9 +103,9 @@
 
   
   h3 {
-      width: auto;
-      height: auto;
-      margin-bottom: 15.7vh;
+    width: auto;
+    height: auto;
+    margin-bottom: 15.7vh;
   }  
        
 }
@@ -922,6 +920,11 @@ and (max-width: 1024px) {
 @media only screen 
 and (min-width: 0px) 
 and (max-width: 430px) {
+  //ANCHOR STYLES ...
+  .anchorM {
+    height: 10px;
+  }
+
   //TEXT WITH LINES ...
   .textWithLines {
     padding: 3.9vh 0;
@@ -943,31 +946,21 @@ and (max-width: 430px) {
   }
 
   //EVENTS ...
-  .top {
-    scroll-margin-top: 29vh;
-    -webkit-scroll-margin-top: 29vh;
-    -moz-scroll-margin-top: 29vh;
-    -ms-scroll-margin-top: 29vh;
-  }
   .events {
     padding-left: 0;
     h7 {
-      margin-top: 32vh;
+      margin-top: 180px;
       width: 73vw;
     }
 
     .video {
       width: auto;
     }
-    .eventsanchor {
-      scroll-margin-top: 23vh;
-      -webkit-scroll-margin-top: 23vh;
-      -moz-scroll-margin-top: 23vh;
-      -ms-scroll-margin-top: 23vh;
-    }
+    
     h1 {
       font-size: calc(35px + 8.3vw);
       margin: 25px 0 0 0;
+      line-height: initial;
     }
 
     h3 {
@@ -1051,12 +1044,6 @@ and (max-width: 430px) {
   .featured {
     padding: 0 0 0 0;
 
-    .featuredanchor {
-      scroll-margin-top: 27vh;
-      -webkit-scroll-margin-top: 27vh;
-      -moz-scroll-margin-top: 27vh;
-      -ms-scroll-margin-top: 27vh;
-    }
     .title {
       h1 {
         font-size: calc(35px + 8.3vw);
@@ -1071,21 +1058,10 @@ and (max-width: 430px) {
     }
   }
 
-  .featuredanchor {
-    scroll-margin-top: 29vh;
-    -webkit-scroll-margin-top: 29vh;
-    -moz-scroll-margin-top: 29vh;
-    -ms-scroll-margin-top: 29vh;
-  }
-
   //CALLOUT ...
 
   .callout {
     padding: 0 0 20px 0;
-    scroll-margin-top: 26vh;
-    -webkit-scroll-margin-top: 26vh;
-    -moz-scroll-margin-top: 26vh;
-    -ms-scroll-margin-top: 26vh;
     h1{
       margin: 31px 0 0 0;
       font-size: 70px;
@@ -1128,13 +1104,6 @@ and (max-width: 430px) {
   .about {
     margin: 30px 0 0 0;
     padding: 0;
-
-    .aboutanchor {
-      scroll-margin-top: 28vh;
-      -webkit-scroll-margin-top: 28vh;
-      -moz-scroll-margin-top: 28vh;
-      -ms-scroll-margin-top: 28vh;
-    }
 
     h1 {
       margin-top: 0;
@@ -1191,13 +1160,6 @@ and (max-width: 430px) {
   //SUPPORT ...
   .support {
     padding: 0 0 0 0;
-
-    .supportanchor {
-      scroll-margin-top: 22vh;
-      -webkit-scroll-margin-top: 22vh;
-      -moz-scroll-margin-top: 22vh;
-      -ms-scroll-margin-top: 22vh;
-    }
 
     h1{
       margin: 80px 0 20px 0;
