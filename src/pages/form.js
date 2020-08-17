@@ -66,7 +66,16 @@ function Form () {
 
       
 
-      <form className="gform" id="form1" name="GFContact" method="POST" gitdata-netlify="true" action="/success/"> 
+      <form
+        className="gform"
+        id="form1"
+        name="GFContact"
+        method="post"
+        action="/success/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}>
+      <input type="hidden" name="form-name" value="contact" />
         
       <div style={{display: "flex"}} className="form-elements">
         <div className={formStyles.description}>
@@ -80,7 +89,6 @@ function Form () {
           </div>
         </div>
 
-        
           <div className={cx(formStyles.input, formStyles.required)}>
             
               <p>First Name</p>
