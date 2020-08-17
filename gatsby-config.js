@@ -10,7 +10,7 @@ module.exports = {
     title: "Greek Frine",
     description: "Your portal to contemporary Hellenic art and music from around the globe.",
     url: "https://www.greekfringe.com", // No trailing slash allowed!
-    image: "../gf.jpg", // Path to your image you placed in the 'static' folder
+    image: "/gf.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@greekfringe",
     author: "Greek Fringe"
   },
@@ -24,6 +24,12 @@ module.exports = {
       `gatsby-plugin-react-helmet`,
       `gatsby-plugin-styled-components`,
       `gatsby-plugin-scroll-reveal`,
+      {
+        resolve: 'gatsby-plugin-preconnect',
+        options: {
+          domains: ['https://f.vimeocdn.com', 'i.vimeocdn.com', '134vod-adaptive.akamaized.net'],
+        },
+      },
       {
         resolve: `gatsby-plugin-google-analytics`,
         options: {
@@ -53,14 +59,6 @@ module.exports = {
           cookieDomain: "example.com",
         },
       },
-      // {
-      //   resolve: 'gatsby-plugin-web-font-loader',
-      //   options: {
-      //     google: {
-      //       families: ['Open Sans', 'Droid Serif']
-      //     }
-      //   }
-      // },
       {
         resolve: `gatsby-source-filesystem`,
         options: {
