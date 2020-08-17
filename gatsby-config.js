@@ -8,7 +8,7 @@ module.exports = {
   /* SEO */
   siteMetadata: {
     title: "Greek Frine",
-    description: "An exploration of contemporary Hellenic diversity and innovation.",
+    description: "Your portal to contemporary Hellenic art and music from around the globe.",
     url: "https://www.greekfringe.com", // No trailing slash allowed!
     image: "/images/gf.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@greekfringe",

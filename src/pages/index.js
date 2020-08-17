@@ -13,8 +13,8 @@ function App() {
   return (
     <div>
       <SEO 
-      title="Greek Frine"
-      description="An exploration of contemporary Hellenic diversity and innovation."/>
+      title="Greek Fringe"
+      description="Your portal to contemporary Hellenic art and music from around the globe."/>
       <Burger/>
       <Menu />
       <Body />
