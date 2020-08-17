@@ -75,7 +75,11 @@ function Form () {
         data-netlify="true"
         data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact" />
-        
+      <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+          </label>
+      </p>
       <div style={{display: "flex"}} className="form-elements">
         <div className={formStyles.description}>
           <div>
