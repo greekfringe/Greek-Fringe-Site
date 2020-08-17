@@ -66,7 +66,7 @@ function Form () {
 
       
 
-      <form className="gform" name="GFContact" method="POST"  data-netlify="true" id="form1"> 
+      <form className="gform" id="form1" name="GFContact" method="POST" data-netlify="true" action="/success"> 
         
       <div style={{display: "flex"}} className="form-elements">
         <div className={formStyles.description}>
