@@ -73,8 +73,7 @@ function Form () {
         method="post"
         action="/success/"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}>
+        data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact" />
         
       <div style={{display: "flex"}} className="form-elements">
