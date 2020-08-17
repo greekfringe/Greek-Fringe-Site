@@ -184,7 +184,7 @@ function Body() {
             <div className={bodyStyles.artistsupport}>
               <div className={bodyStyles.textWithLines}><h4>SUPPORT THE ARTISTS</h4></div>
               <div className={bodyStyles.column2}>
-                <p>Though we intend on producing mind altering events in real life, due to COVID-19 we are kicking off with a series of digital events in an effort protect the public and those involved. Despite being online, the same amount of love, sweat and tears go into producing these works, so we encourage people (if you have the means) to throw some coin at the artists we feature.</p>
+                <p>Though we intend on producing mind altering events in real life, due to COVID-19 we are kicking off with a series of digital events in an effort to protect the public and those involved. Despite being online, the same amount of love, sweat and tears go into producing these works, so we encourage people (if you have the means) to throw some coin at the artists we feature.</p>
                 <p>We have devised a tiered system of payment so you can pay what you feel to support the many people that have devoted their time and talent to this event. Click on the “SUPPORT THE ARTISTS” button below.</p>
               </div>
             </div>
@@ -1049,7 +1049,7 @@ function Body() {
               data-sal-delay="300"
               data-sal-duration="800"
               data-sal-easing="ease">Overdue Studio</h3></a>
-              <p>Art Director / Visual Design</p>
+              <p>Visual Design / Web Development</p>
             </div>            
             <div className={bodyStyles.teamimg}>
               <a href="mailTo:info@overduestudio.co">
@@ -1059,7 +1059,7 @@ function Body() {
                 />
               </a>
             </div>
-            <p>Overdue Studio is a visual design studio creating thoughtful design solutions digitally and physically. From concept and design to realisation, the studio offers a full creative service in photography, branding, print, digital, object and exhibition design. It is Overdue Studio’s honour to collaborate with Greek Fringe, together they promote music and culture with creativity and authenticity.<br/><b><a href="mailTo:info@overduestudio.co">Contact us for design enquiries.</a></b></p>
+            <p>Overdue Studio is a visual design studio creating thoughtful design solutions digitally and physically. From concept and design to realisation, the studio offers a full creative service in photography, branding, print, digital, object and exhibition design. It is Overdue Studio’s honour to collaborate with Greek Fringe, together they promote music and culture with creativity and authenticity.<br/><b><a href="mailTo:info@overduestudio.co">Contact Overdue Studio for design enquiries.</a></b></p>
             <div id="supportM" className={bodyStyles.anchorM}></div>
           </div>
         </div>
