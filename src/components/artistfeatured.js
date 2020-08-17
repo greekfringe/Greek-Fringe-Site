@@ -49,7 +49,6 @@ function ArtistFeatured (){
               data-sal-delay="300"
               data-sal-duration="800"
               data-sal-easing="ease">{edge.node.frontmatter.name}</h2> 
-
               <div className={featuredStyles.img}
               data-sal="slide-up"
               data-sal-delay="300"
@@ -69,8 +68,11 @@ function ArtistFeatured (){
                 <div className={featuredStyles.text}>
                   <p>{edge.node.frontmatter.description}</p>
                 </div> 
-                <a href={edge.node.frontmatter.link} target="_blank" rel="noreferrer">
-                  <button className="buttonW"
+                <a href={edge.node.frontmatter.link} target="_blank" rel="noreferrer" alt="Go to artist website">
+                  <span className={featuredStyles.hidden}>
+                  Link to artist personal website
+                  </span>
+                  <button className="buttonW" alt="Go to artist website"
                   data-sal="slide-up"
                   data-sal-delay="300"
                   data-sal-duration="800"
