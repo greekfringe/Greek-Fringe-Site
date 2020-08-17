@@ -18,6 +18,16 @@ ol {
       display: grid;
       grid-template: auto auto 9.2vh / auto auto ; 
       column-gap: 5.8vw;
+
+      .hidden {
+        clip-path: inset(100%);
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+     }
     
       .textWithLines {
         
@@ -34,16 +44,6 @@ ol {
     
       .text {
         display: block;
-
-        .visually-hidden {
-          clip-path: inset(100%);
-          clip: rect(1px, 1px, 1px, 1px);
-          height: 1px;
-          overflow: hidden;
-          position: absolute;
-          white-space: nowrap;
-          width: 1px;
-       }
        
         p {
           margin: 0;
