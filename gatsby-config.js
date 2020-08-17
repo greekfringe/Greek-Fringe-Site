@@ -5,6 +5,15 @@
  */
 
 module.exports = {
+  /* SEO */
+  siteMetadata: {
+    title: "Greek Frine",
+    description: "An exploration of contemporary Hellenic diversity and innovation.",
+    url: "https://www.greekfringe.com", // No trailing slash allowed!
+    image: "/images/gf.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@greekfringe",
+    author: "Greek Fringe"
+  },
   /* Your site config here */
   plugins: [
       `gatsby-plugin-smoothscroll`,

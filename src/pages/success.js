@@ -1,16 +1,14 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery, Link } from "gatsby"
+import { Helmet } from "react-helmet"
 import Img from "gatsby-image"
-import cx from 'classnames'
-
-
 
 //  STYLES ...
-import formStyles from "../styles/form.module.scss"
+import successStyles from "../styles/success.module.scss"
 import "../styles/index.scss"
 
-function Form () {
+
+function Success () {
 
   const data = useStaticQuery(graphql`
 
@@ -28,19 +26,18 @@ function Form () {
   `)
 
   return (
-    <div className={formStyles.wrapper}>
+    <div className={successStyles.wrapper}>
 
     <Helmet>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
     </Helmet>
 
-      <div className={formStyles.header}>
-        <div className={formStyles.container}>
-        {/* LOGO SVG ... */}
+      <div className={successStyles.header}>
+        <div className={successStyles.container}>
           <Link to="/">  
-            <div className={formStyles.logo}
+            <div className={successStyles.logo}
             data-sal="slide-up"
-            data-sal-delay="300"
+            data-sal-delay="100"
             data-sal-duration="400"
             data-sal-easing="ease">
               <svg data-name="Layer 1" viewBox="0 0 570 280">
@@ -55,7 +52,7 @@ function Form () {
             </div>
           </Link>
           {/* STAIRS SVG ... */}
-          <div className={formStyles.stairs}>
+          <div className={successStyles.stairs}>
             <Img 
                 fluid = {data.stair.childImageSharp.fluid}  
                 alt="Biautifull stair logo representing Greece ireland's infinite stairs"
@@ -64,122 +61,24 @@ function Form () {
         </div>
       </div>
 
-      
-
-      <form className="gform" name="GFContact" method="POST"  data-netlify="true" id="form1"> 
-        
-      <div style={{display: "flex"}} className="form-elements">
-        <div className={formStyles.description}>
-          <div>
-            <div className={formStyles.textWithLines}>
-              <h4>ARTIST APPLICATION FORM</h4>
-            </div>
-          </div>
-          <div>
-            <p>Make sure your work is a good fit for our platform (and that we’re a good fit for you). Take a look at our About section to get a feel for what we do. Fill in the form below with a description of yourself and the type of work you wish to put forward.</p>
+      <div className={successStyles.thankyou}>
+        <div>
+          <div className={successStyles.container}>
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_1TwnyK.json"  background="transparent"  speed="1" autoplay></lottie-player>   
           </div>
         </div>
+        <div
+        data-sal="slide-up"
+        data-sal-delay="400"
+        data-sal-duration="400"
+        data-sal-easing="ease">
+          <p>Thank you!</p> 
+          <p>Your application has been sent!</p>
+        </div>
+      </div>  
 
-        
-          <div className={cx(formStyles.input, formStyles.required)}>
-            
-              <p>First Name</p>
-            
-              <input type="text" name="Name" required></input>
-                    
-          </div>
-
-          <div className={cx(formStyles.input, formStyles.required)}>
-            
-              <p>Last Name</p>
-            
-              <input type="text" name="Last name" required></input>
-                    
-          </div>
-
-          <div className={cx(formStyles.input, formStyles.required)}>
-            
-              <p>Name of Act/ Artist/ Performance</p>
-            
-              <input type="text" name="Name of Art" required></input>
-                    
-          </div>
-
-          <div className={cx(formStyles.input, formStyles.required)}>
-            
-              <p>email</p>
-            
-              <input type="email" name="email" required></input>
-                    
-          </div>
-
-          <div className={cx(formStyles.input, formStyles.required)}>
-            
-              <p>Postcode</p>
-            
-              <input type="number" name="Postcode" placeholder="" required></input>
-                    
-          </div>
-
-          <div className={cx(formStyles.input, formStyles.optional)}>
-            
-              <p>Social Media</p>
-            
-              <input type="text" name="Social media"  placeholder="Link to Facebook, Instagram etc."></input>
-                    
-          </div>
-
-          <div className={cx(formStyles.input, formStyles.optional)}>
-            
-              <p>Website</p>
-            
-              <input type="text" name="Website" placeholder="Optional"></input>
-                    
-          </div>
-
-          <div className={cx(formStyles.input, formStyles.optional)}>
-            
-              <p>Please provide link to samples of your work</p>
-            
-              <input type="text" name="Sample of work" placeholder="Optional"></input>
-                    
-          </div>
-
-          <div className={cx(formStyles.input, formStyles.optional, formStyles.square)}>
-            
-              <p>Why do you think your work would fit in Greek Fringe</p>
-            
-              <textarea maxlength="1000" type="text" name="Why Your work would fit in GF" placeholder="(1000 characters max)"required></textarea>
-                    
-          </div>
-
-          <div className={cx(formStyles.input, formStyles.optional, formStyles.square)}>
-            
-              <p>Please describe the work you wish to present at Greek Fringe</p>
-            
-              <textarea maxlength="1000" type="text" name="Work description" placeholder="(1000 characters max)" required></textarea>
-                    
-          </div>
-
-          <div className={cx(formStyles.input, formStyles.optional)}>
-            
-              <p>Where did you find out the Greek Fringe?</p>
-            
-              <input type="text" name="Where did you find GFF" placeholder="Word of mouth, social, other"></input>
-                    
-          </div>
-
-          <span className={formStyles.line}></span>
-          <div className={formStyles.buttons}>
-          <Link to="/">  
-            <button className="buttonW">HOME</button>
-          </Link>
-          <button className={formStyles.submit} id="form1" type="submit" value="submit">SUBMIT NOW</button>
-          </div>
-        </div> 
-      </form>
     </div>
   )
 }
 
-export default Form
+export default Success

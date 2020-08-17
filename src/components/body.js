@@ -23,7 +23,7 @@ function Body() {
       now01: file(relativePath: {eq: "thenow_00.jpg"}) {
         id
         childImageSharp {
-          fluid {
+          fluid (quality: 100){
             ...GatsbyImageSharpFluid
           }
         }
@@ -31,7 +31,7 @@ function Body() {
       now02: file(relativePath: {eq: "thenow_01.jpg"}) {
         id
         childImageSharp {
-          fluid {
+          fluid (quality: 100){
             ...GatsbyImageSharpFluid
           }
         }
@@ -39,7 +39,7 @@ function Body() {
       now03: file(relativePath: {eq: "thenow_02.jpg"}) {
         id
         childImageSharp {
-          fluid {
+          fluid (quality: 100){
             ...GatsbyImageSharpFluid
           }
         }
@@ -47,7 +47,7 @@ function Body() {
       t01: file(relativePath: {eq: "team_01.jpg"}) {
         id
         childImageSharp {
-          fluid {
+          fluid (quality: 100){
             ...GatsbyImageSharpFluid
           }
         }
@@ -55,7 +55,7 @@ function Body() {
       t02: file(relativePath: {eq: "team_02.jpg"}) {
         id
         childImageSharp {
-          fluid {
+          fluid (quality: 100){
             ...GatsbyImageSharpFluid
           }
         }
@@ -63,7 +63,7 @@ function Body() {
       t03: file(relativePath: {eq: "team_03.jpg"}) {
         id
         childImageSharp {
-          fluid {
+          fluid (quality: 100){
             ...GatsbyImageSharpFluid
           }
         }
@@ -71,7 +71,7 @@ function Body() {
       t04: file(relativePath: {eq: "team_04.jpg"}) {
         id
         childImageSharp {
-          fluid {
+          fluid (quality: 100){
             ...GatsbyImageSharpFluid
           }
         }
@@ -79,7 +79,7 @@ function Body() {
       t05: file(relativePath: {eq: "team_05.jpg"}) {
         id
         childImageSharp {
-          fluid {
+          fluid (quality: 100){
             ...GatsbyImageSharpFluid
           }
         }
@@ -87,7 +87,7 @@ function Body() {
       t06: file(relativePath: {eq: "team_06.jpg"}) {
         id
         childImageSharp {
-          fluid {
+          fluid (quality: 100){
             ...GatsbyImageSharpFluid
           }
         }

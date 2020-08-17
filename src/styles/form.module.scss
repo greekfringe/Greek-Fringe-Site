@@ -199,7 +199,30 @@ and (max-width: 1024px) {
   }
 }
 
-//SMARTPHONE 
+//SMARTPHONE LANDSCAPE
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 900px)
+and (orientation: landscape) {
+  .wrapper {
+    margin: 0;
+
+    form {
+      .input {
+        height: auto;
+        p {
+          margin-bottom: 5px;
+        }
+        input {
+          height: 8vh;
+        }
+      }
+    }
+  }
+
+}
+
+//SMARTPHONE PORTRAIT
 @media only screen 
 and (min-width: 0px) 
 and (max-width: 430px) {
@@ -222,9 +245,18 @@ and (max-width: 430px) {
     }
 
     form {
-      margin-top: 140px;
+      height: auto;
+      margin-top: 18vh;
+      .input {
+        height: auto;
+        p {
+          margin-bottom: 5px;
+        }
+        input {
+          height: 5vh;
+        }
+      }
     }
-
   }
 }
 

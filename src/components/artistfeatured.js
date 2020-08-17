@@ -24,7 +24,7 @@ function ArtistFeatured (){
               description
                     featuredImg {
                       childImageSharp {
-                        fluid {
+                        fluid (quality: 100){
                           ...GatsbyImageSharpFluid
                   }
                 }

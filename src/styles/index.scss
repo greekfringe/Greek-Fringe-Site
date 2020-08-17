@@ -179,6 +179,7 @@ p {
 
 //FORM ...
 .gform {
+  height: auto;
   display: flex;
 }
 
@@ -187,41 +188,4 @@ p {
   display: flex;
   flex-direction: column;
   
-}
-
-
-//THANK YOU MESSAGE
-.thankyou_message {
-  flex-direction: column;
-  margin-top: 16.8vh;
-
-  div {
-    align-self: center;
-    text-align: center;
-  }
-
-  p {
-    font-family: inherit;
-    font-size: calc( 20px + 1.2vw);
-    line-height: 78px;
-  }
-}
-
-.animation-container {
-  width: 5.2vw;
-  height: auto;
-}
-
-@media only screen and (max-width: 1024px) {
-  h1 {
-    font-size: calc(56px + 5.4vw);
-  }
-}
-
-@media only screen 
-and (min-width: 0px) 
-and (max-width: 800px)  {
-  html, body {
-    width: 100vw;
-  }
 }

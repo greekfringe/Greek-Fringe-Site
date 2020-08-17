@@ -1,0 +1,186 @@
+.wrapper {
+  width: auto;
+  height: 100vh;
+  margin: 0 19.4vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    width: 100%;
+    height: auto;
+    background-color: #EF4423;
+
+    .container{
+      display: flex;
+      flex-direction: row;
+      margin: 6.4vh 2.6vw;
+
+      .logo {
+        width: 15.2vw;
+        height: auto;
+        margin: 0 auto 0 0;
+      }
+
+      .stairs {
+        width: 5vw;
+        height: auto;
+        margin: auto 0 0 auto;
+        align-self: flex-end;
+      }
+      
+    }
+  }
+
+  .thankyou {
+    flex-direction: column;
+    margin-top: 16.8vh;
+  
+    div {
+      align-self: center;
+      text-align: center;
+    }
+  
+    p {
+      font-family: inherit;
+      font-size: calc( 22px + 1.2vw);
+      line-height: 78px;
+    }
+
+    .container {
+      width: 6.2vw;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}
+
+//BREAKPOINTS ... 
+
+
+//IPADS PORTRAIT 
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 0 10vw;
+  }
+}
+
+
+//SMARTPHONE LANDSCAPE
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 900px)
+and (orientation: landscape) {
+  .wrapper {
+    width: auto;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  
+    .header {
+      width: 100%;
+      height: auto;
+      background-color: #EF4423;
+  
+      .container{
+        display: flex;
+        flex-direction: row;
+        margin: 4.4vh 2.6vw;
+  
+        .logo {
+          width: 15vw;
+          height: auto;
+          margin: 0 auto 0 0;
+        }
+  
+        .stairs {
+          display: none;
+        }
+        
+      }
+    }
+  
+    .thankyou {
+      flex-direction: column;
+      margin: 8vh 6vw 0 6vw;
+    
+      div {
+        align-self: center;
+        text-align: center;
+      }
+    
+      p {
+        font-family: inherit;
+        font-size: calc( 22px + 1.2vw);
+        line-height: 30px;
+      }
+  
+      .container {
+        width: 8vw;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+} 
+
+//SMARTPHONE PORTRAIT
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 430px) {
+  .wrapper {
+    width: auto;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  
+    .header {
+      width: 100%;
+      height: auto;
+      background-color: #EF4423;
+  
+      .container{
+        display: flex;
+        flex-direction: row;
+        margin: 4.4vh 2.6vw;
+  
+        .logo {
+          width: 40vw;
+          height: auto;
+          margin: 0 auto 0 0;
+        }
+  
+        .stairs {
+          display: none;
+        }
+        
+      }
+    }
+  
+    .thankyou {
+      flex-direction: column;
+      margin: 16vh 6vw 0 6vw;
+    
+      div {
+        align-self: center;
+        text-align: center;
+      }
+    
+      p {
+        font-family: inherit;
+        font-size: calc( 22px + 1.2vw);
+        line-height: 78px;
+      }
+  
+      .container {
+        width: 15vw;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+} 
