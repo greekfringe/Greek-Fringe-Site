@@ -145,7 +145,7 @@ function Body() {
             <div className="embed-container">
               <iframe
                 title="vimeo intro video"
-                src="https://player.vimeo.com/video/442226983?autoplay=1&muted=1&loop=1"
+                src="https://player.vimeo.com/video/450405903?autoplay=1&muted=1&loop=1"
                 allow="autoplay"
                 webkitallowfullscreen
                 mozallowfullscreen
