@@ -227,7 +227,7 @@ function Body() {
             />
             <div className="embed-container">
             <iframe
-              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fgreekfringe%2Fvideos%2F370076527319696%2F&show_text=0&width=560"
+              src="https://player.vimeo.com/video/452051006?fbclid=IwAR0vUbkw6cpuUuwBXsqHQMbiO0dGZsSw1_VOjwnzYiK1JD3tF1uPjA5OE6A"
               style={{ border: "none", overflow: "hidden" }}
               scrolling="no"
               allowTransparency="true"
