@@ -203,7 +203,8 @@ function Body() {
               Amalgamation Project (CY) + Luka Lesson (AU)
             </h2>
           </div>
-          <div className={bodyStyles.video}
+          
+          {/* <div className={bodyStyles.video}
           data-sal="slide-up"
           data-sal-delay="300"
           data-sal-duration="800"
@@ -212,7 +213,32 @@ function Body() {
               fluid = {data.placeholder.childImageSharp.fluid}  
               alt="Athens house's main door full of graffiti"
             />
+          </div> */}
+          <div className={bodyStyles.video} 
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-duration="800"
+            data-sal-easing="ease">
+              <style
+              dangerouslySetInnerHTML={{
+                __html:
+                  ".embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }"
+              }}
+            />
+            <div className="embed-container">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fgreekfringe%2Fvideos%2F370076527319696%2F&show_text=0&width=560"
+              style={{ border: "none", overflow: "hidden" }}
+              scrolling="no"
+              allowTransparency="true"
+              allowFullScreen="true"
+              width={560}
+              height={458}
+              frameBorder={0}
+            />
+            </div>
           </div>
+          
             <div className={bodyStyles.streaminfo}> 
               <div className={bodyStyles.time}>
                 8:30pm-9:30pm (AEST) 28 August, 2020
