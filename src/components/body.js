@@ -20,6 +20,12 @@ function Body() {
 
     query Images {
 
+      contentfulEvent {
+        title
+        videoLinkNumber
+        date
+      }
+
       now01: file(relativePath: {eq: "thenow_00.jpg"}) {
         id
         childImageSharp {
@@ -200,7 +206,7 @@ function Body() {
             data-sal-delay="300"
             data-sal-duration="800"
             data-sal-easing="ease">
-              Amalgamation Project (CY) + Luka Lesson (AU)
+              {data.contentfulEvent.title}
             </h2>
           </div>
           
@@ -227,7 +233,7 @@ function Body() {
             />
             <div className="embed-container">
             <iframe
-              src="https://player.vimeo.com/video/452051006?fbclid=IwAR0vUbkw6cpuUuwBXsqHQMbiO0dGZsSw1_VOjwnzYiK1JD3tF1uPjA5OE6A"
+              src={data.contentfulEvent.videoLinkNumber}
               style={{ border: "none", overflow: "hidden" }}
               scrolling="no"
               allowTransparency="true"
@@ -241,7 +247,7 @@ function Body() {
           
             <div className={bodyStyles.streaminfo}> 
               <div className={bodyStyles.time}>
-                8:30pm-9:30pm (AEST) 28 August, 2020
+              {data.contentfulEvent.date}
               </div>
               <div className={bodyStyles.streambtn}
               data-sal="slide-up"
