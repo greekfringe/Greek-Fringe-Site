@@ -34,6 +34,7 @@
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-plugin-transition-link": "^1.20.2",
     "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-contentful": "^4.1.0",
     "gatsby-source-filesystem": "^2.3.20",
     "gatsby-source-vimeo": "^1.1.8",
     "gatsby-source-vimeo-all": "0.0.18",

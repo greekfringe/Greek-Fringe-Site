@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+require('dotenv').config();
+
 module.exports = {
   /* SEO */
   siteMetadata: {
@@ -50,6 +52,14 @@ module.exports = {
         options: {
           name: `src`,
           path: `${__dirname}/src/featured_artist`,
+        },
+      },
+      {
+        resolve: `gatsby-source-contentful`,
+        options: {
+          spaceId: `whaxa3w9otqa`,
+          // Learn about environment variables: https://gatsby.dev/env-vars
+          accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         },
       },
   ],
