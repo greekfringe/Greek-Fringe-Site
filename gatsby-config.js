@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-require('dotenv').config();
+require("dotenv").config()
 
 module.exports = {
   /* SEO */
@@ -57,7 +57,7 @@ module.exports = {
       {
         resolve: `gatsby-source-contentful`,
         options: {
-          spaceId: 'whaxa3w9otqa',
+          spaceId: "whaxa3w9otqa",
           // Learn about environment variables: https://gatsby.dev/env-vars
           accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         },
