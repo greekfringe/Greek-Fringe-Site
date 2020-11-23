@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 
+import {documentToReactComponents} from '@contentful/rich-text-react-renderer'
+
 
 
 // COMPONENTS...
@@ -12,10 +14,8 @@ import ArtistFeatured from "../components/artistfeatured"
 import bodyStyles from "../styles/body.module.scss"
 import "../styles/index.scss"
 
-
 function Body() {
-
-
+  
   const data = useStaticQuery(graphql`
 
     query Images {
@@ -24,6 +24,16 @@ function Body() {
         title
         videoLinkNumber
         date
+        activateVideo
+        eventPlaceholderImage {
+          fluid (quality: 100) {
+            ...GatsbyContentfulFluid
+          }
+          title
+        }
+        childContentfulEventEventDescriptionRichTextNode {
+          json
+        }
       }
 
       now01: file(relativePath: {eq: "thenow_00.jpg"}) {
@@ -118,9 +128,6 @@ function Body() {
   
   `)
 
-
-
-
   return (
     <div id="top" className={bodyStyles.wrapper}>
       <div className={bodyStyles.top}></div>
@@ -210,17 +217,21 @@ function Body() {
             </h2>
           </div>
           
-          {/* <div className={bodyStyles.video}
+          <div className={data.contentfulEvent.activateVideo ? bodyStyles.videoNO : bodyStyles.videoYES} 
           data-sal="slide-up"
           data-sal-delay="300"
           data-sal-duration="800"
           data-sal-easing="ease">
             <Img 
-              fluid = {data.placeholder.childImageSharp.fluid}  
-              alt="Athens house's main door full of graffiti"
+              fluid = {data.contentfulEvent.eventPlaceholderImage.fluid}  
+              alt={data.contentfulEvent.eventPlaceholderImage.title}
             />
-          </div> */}
-          <div className={bodyStyles.video} 
+            {/* <img 
+              src= {data.contentfulEvent.eventPlaceholderImage.sizes}
+              alt= {data.contentfulEvent.eventPlaceholderImage.title}
+            /> */}
+          </div>
+          <div className={data.contentfulEvent.activateVideo ? bodyStyles.videoYES : bodyStyles.videoNO} 
             data-sal="slide-up"
             data-sal-delay="300"
             data-sal-duration="800"
@@ -257,23 +268,11 @@ function Body() {
                 <a href="https://www.facebook.com/greekfringe/" target="_blank" rel="noreferrer"><button className={bodyStyles.free} type="button" aria-label="Watch Live Stream on GFF's Facebook"><p>WATCH LIVE STREAM</p></button></a>
                 <a href="https://www.stickytickets.com.au/fdqoh/greek_fringe_fest__amalgamation_project_cy__luka_lesson_au.aspx" target="_blank" rel="noreferrer"><button className="buttonOrange" type="button" aria-label="Support Artist">SUPPORT THE ARTISTS</button>
                 </a> 
-              </div>
-              
-              <div className={bodyStyles.streamtxt}>
-                <h5>Amalgamation Project</h5>
-                <p>Created by Vasiliki Anastasiou, the Amalgamation Project’s heart centres around her original compositions. It borrows and re-arranges traditional melodies from countries around the shores of the Mediterranean Sea but also from the whole of the Balkan peninsula. Vasiliki invites guest musicians from different backgrounds usually jazz, classical and folk, to share musical thoughts and experiment with the blend. Their repertoire includes polyphonic adaptations of traditional music through a modern approach.</p>
-                <div className={bodyStyles.streamtxt2}>
-                <h5>Luka Lesson</h5>        
-                <p>Luka Lesson is a poet and rapper whose work engages with the Greek mythology of his family homeland, the fiercely political and the vulnerably self-reflective. Luka has performed with the Queensland Symphony Orchestra, released his own musical albums and books, and has been published in a number international poetry collections. Luka Lesson has always used education-based programs as a means for social change both within Australia and abroad, and his work is currently being studied in English departments across the country. Luka Lesson also runs his own poetry retreat in his grandfather’s village on the island of Rhodes, Greece every year. Luka’s latest solo work, entitled Agapi {"&"} Other Kinds of Love will premiere in 2020.</p>
-                </div>
-              </div>
+              </div>              
 
-              {/* <div className={bodyStyles.seemore}>    
-                <div className={bodyStyles.textWithLines}>
-                  <p>SEE MORE</p>
-                </div>             
-                <p>Beyond our physical and digital events, we are compiling a catalogue of artists who embody contemporary Hellenic diversity and innovation.</p>
-              </div> */}
+              <div className={bodyStyles.streamtxt}>    
+                {documentToReactComponents(data.contentfulEvent.childContentfulEventEventDescriptionRichTextNode.json)}
+              </div>
               {/* <div className={bodyStyles.streambtnCataloge}>
                 <button className="buttonW"><p>ARTIST CATALOGUE</p></button>
               </div>  */}
