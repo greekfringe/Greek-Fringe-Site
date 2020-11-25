@@ -14,25 +14,57 @@ import ArtistFeatured from "../components/artistfeatured"
 import bodyStyles from "../styles/body.module.scss"
 import "../styles/index.scss"
 
+// contentfulEvent {
+//   title
+//   videoLinkNumber
+//   date
+//   activateVideo
+//   eventPlaceholderImage {
+//     fluid (quality: 100) {
+//       ...GatsbyContentfulFluid
+//     }
+//     title
+//   }
+//   childContentfulEventEventDescriptionRichTextNode {
+//     json
+//   }
+// }
+
 function Body() {
   
   const data = useStaticQuery(graphql`
 
-    query Images {
+    query {
 
       contentfulEvent {
-        title
-        videoLinkNumber
-        date
-        activateVideo
-        eventPlaceholderImage {
+        introTeaserVideo
+        whatsOnTitle1
+        whatsOnDescription1 {
+          json
+        }
+        whatsOnTitle2
+        whatsOnDescritpion2 {
+          json
+        }
+        EventTitle
+        eventImage {
           fluid (quality: 100) {
             ...GatsbyContentfulFluid
           }
-          title
         }
-        childContentfulEventEventDescriptionRichTextNode {
+        showhideVideo
+        eventVideoLink
+        eventDate
+        eventDescription {
           json
+        }
+      }
+
+      contentfulSupporters {
+        supportersImage {
+          fluid (quality: 100) {
+            ...GatsbyContentfulFluid
+          }
         }
       }
 
@@ -108,22 +140,6 @@ function Body() {
           }
         }
       }
-      placeholder: file(relativePath: {eq: "placeholder_00.jpg"}) {
-        id
-        childImageSharp {
-          fluid (quality: 100){
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      support: file(relativePath: {eq: "supporters_00.png"}) {
-        id
-        childImageSharp {
-          fluid (quality: 100){
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   
   `)
@@ -186,19 +202,23 @@ function Body() {
           <div className={bodyStyles.on}>
             <div className={bodyStyles.digitalevents}>
               <div className={bodyStyles.textWithLines}>
-                <h4>DIGITAL EVENTS</h4>
+                <h4>{data.contentfulEvent.whatsOnTitle1}</h4>
               </div>            
               <div className={bodyStyles.column1}>
-                <p>Greek Fringe is thrilled to present an interhemispheric collaboration, bringing together two award winning creative forces – the strikingly original Amalgamation Project (Cyprus) and prophetic poet and rapper, Luka Lesson (Australia).</p>
+                {documentToReactComponents(data.contentfulEvent.whatsOnDescription1.json)}
+                {/* <p>Greek Fringe is thrilled to present an interhemispheric collaboration, bringing together two award winning creative forces – the strikingly original Amalgamation Project (Cyprus) and prophetic poet and rapper, Luka Lesson (Australia).</p>
                 <p>This promises to be a dynamic showcase of contemporary Hellenic diversity that connects young Creatives from the source with the diaspora.</p>
-                <p>These artists have pushed the boundaries within their own fields, and we are taking it a step further by merging art forms and continents in a digital presentation that lays claim to the NOW.</p>
+                <p>These artists have pushed the boundaries within their own fields, and we are taking it a step further by merging art forms and continents in a digital presentation that lays claim to the NOW.</p> */}
               </div>
             </div>
             <div className={bodyStyles.artistsupport}>
-              <div className={bodyStyles.textWithLines}><h4>SUPPORT THE ARTISTS</h4></div>
+              <div className={bodyStyles.textWithLines}>
+                <h4>{data.contentfulEvent.whatsOnTitle2}</h4>
+              </div>
               <div className={bodyStyles.column2}>
-                <p>Though we intend on producing mind altering events in real life, due to COVID-19 we are kicking off with a series of digital events in an effort to protect the public and those involved. Despite being online, the same amount of love, sweat and tears go into producing these works, so we encourage people (if you have the means) to throw some coin at the artists we feature.</p>
-                <p>We have devised a tiered system of payment so you can pay what you feel to support the many people that have devoted their time and talent to this event. Click on the “SUPPORT THE ARTISTS” button below.</p>
+                {documentToReactComponents(data.contentfulEvent.whatsOnDescription1.json)}
+                {/* <p>Though we intend on producing mind altering events in real life, due to COVID-19 we are kicking off with a series of digital events in an effort to protect the public and those involved. Despite being online, the same amount of love, sweat and tears go into producing these works, so we encourage people (if you have the means) to throw some coin at the artists we feature.</p>
+                <p>We have devised a tiered system of payment so you can pay what you feel to support the many people that have devoted their time and talent to this event. Click on the “SUPPORT THE ARTISTS” button below.</p> */}
               </div>
             </div>
           </div>  
@@ -213,25 +233,24 @@ function Body() {
             data-sal-delay="300"
             data-sal-duration="800"
             data-sal-easing="ease">
-              {data.contentfulEvent.title}
+              {data.contentfulEvent.EventTitle}
             </h2>
           </div>
           
-          <div className={data.contentfulEvent.activateVideo ? bodyStyles.videoNO : bodyStyles.videoYES} 
+          
+          <div className={data.contentfulEvent.showhideVideo ? bodyStyles.videoNO : bodyStyles.videoYES}  
           data-sal="slide-up"
           data-sal-delay="300"
           data-sal-duration="800"
           data-sal-easing="ease">
             <Img 
-              fluid = {data.contentfulEvent.eventPlaceholderImage.fluid}  
-              alt={data.contentfulEvent.eventPlaceholderImage.title}
+              fluid = {data.contentfulEvent.eventImage.fluid}  
+              alt={data.contentfulEvent.eventImage.title}
             />
-            {/* <img 
-              src= {data.contentfulEvent.eventPlaceholderImage.sizes}
-              alt= {data.contentfulEvent.eventPlaceholderImage.title}
-            /> */}
           </div>
-          <div className={data.contentfulEvent.activateVideo ? bodyStyles.videoYES : bodyStyles.videoNO} 
+
+          
+           <div className={data.contentfulEvent.showhideVideo ? bodyStyles.videoYES : bodyStyles.videoNO} 
             data-sal="slide-up"
             data-sal-delay="300"
             data-sal-duration="800"
@@ -244,7 +263,7 @@ function Body() {
             />
             <div className="embed-container">
             <iframe
-              src={data.contentfulEvent.videoLinkNumber}
+              src={data.contentfulEvent.eventVideoLink}
               style={{ border: "none", overflow: "hidden" }}
               scrolling="no"
               allowTransparency="true"
@@ -258,7 +277,7 @@ function Body() {
           
             <div className={bodyStyles.streaminfo}> 
               <div className={bodyStyles.time}>
-              {data.contentfulEvent.date}
+              {data.contentfulEvent.eventDate}
               </div>
               <div className={bodyStyles.streambtn}
               data-sal="slide-up"
@@ -271,7 +290,7 @@ function Body() {
               </div>              
 
               <div className={bodyStyles.streamtxt}>    
-                {documentToReactComponents(data.contentfulEvent.childContentfulEventEventDescriptionRichTextNode.json)}
+              {documentToReactComponents(data.contentfulEvent.eventDescription.json)}
               </div>
               {/* <div className={bodyStyles.streambtnCataloge}>
                 <button className="buttonW"><p>ARTIST CATALOGUE</p></button>
@@ -1127,7 +1146,7 @@ function Body() {
           <div class={bodyStyles.sponsors}>
             <h3>Greek Fringe is powered by</h3>
             <Img 
-              fluid = {data.support.childImageSharp.fluid}  
+              fluid = {data.contentfulSupporters.supportersImage.fluid}  
               alt="Overdue Studio portrait"
               data-sal="slide-up"
               data-sal-delay="300"
