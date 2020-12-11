@@ -54,6 +54,7 @@ function Body() {
         showhideVideo
         eventVideoLink
         eventDate
+        supportTheArtistsButton
       }
       contentfulSupporters {
         supportersImage {
@@ -61,7 +62,6 @@ function Body() {
             ...GatsbyContentfulFluid
           }
         }
-      supportTheArtistsButton
       }
 
       now01: file(relativePath: {eq: "thenow_00.jpg"}) {
