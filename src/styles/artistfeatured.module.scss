@@ -25,7 +25,7 @@ ol {
         height: 1px;
         overflow: hidden;
         position: absolute;
-        white-space: nowrap;
+        // white-space: nowrap;
         width: 1px;
      }
     
@@ -46,7 +46,6 @@ ol {
         display: block;
        
         p {
-          margin: 0;
           white-space: pre-line;
         }
     

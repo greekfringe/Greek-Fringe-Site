@@ -177,7 +177,7 @@ function ArtistFeatured (){
               <p>{data.contentfulFeaturedArtists.typeOfArt2}</p>
             </div>
             <div className={featuredStyles.text}>
-              <p>{documentToReactComponents(data.contentfulFeaturedArtists.description1.json)}</p>
+              <p>{documentToReactComponents(data.contentfulFeaturedArtists.description2.json)}</p>
             </div> 
             <a href={data.contentfulFeaturedArtists.link2} target="_blank" rel="noreferrer" alt="Go to artist website">
               <span className={featuredStyles.hidden}>

@@ -5,7 +5,6 @@ import Img from "gatsby-image"
 import {documentToReactComponents} from '@contentful/rich-text-react-renderer'
 
 
-
 // COMPONENTS...
 import TopBodyNav1 from "../components/topbodynav"
 import ArtistFeatured from "../components/artistfeatured"
@@ -43,7 +42,7 @@ function Body() {
           json
         }
         whatsOnTitle2
-        whatsOnDescritpion2 {
+        whatsOnDescription2 {
           json
         }
         EventTitle
@@ -55,9 +54,6 @@ function Body() {
         showhideVideo
         eventVideoLink
         eventDate
-        eventDescription {
-          json
-        }
       }
 
       contentfulSupporters {
@@ -216,7 +212,7 @@ function Body() {
                 <h4>{data.contentfulEvent.whatsOnTitle2}</h4>
               </div>
               <div className={bodyStyles.column2}>
-                {documentToReactComponents(data.contentfulEvent.whatsOnDescription1.json)}
+                {documentToReactComponents(data.contentfulEvent.whatsOnDescription2.json)}
                 {/* <p>Though we intend on producing mind altering events in real life, due to COVID-19 we are kicking off with a series of digital events in an effort to protect the public and those involved. Despite being online, the same amount of love, sweat and tears go into producing these works, so we encourage people (if you have the means) to throw some coin at the artists we feature.</p>
                 <p>We have devised a tiered system of payment so you can pay what you feel to support the many people that have devoted their time and talent to this event. Click on the “SUPPORT THE ARTISTS” button below.</p> */}
               </div>
@@ -265,6 +261,7 @@ function Body() {
             <iframe
               src={data.contentfulEvent.eventVideoLink}
               style={{ border: "none", overflow: "hidden" }}
+              title="Video Link"
               scrolling="no"
               allowTransparency="true"
               allowFullScreen="true"
@@ -289,9 +286,6 @@ function Body() {
                 </a> 
               </div>              
 
-              <div className={bodyStyles.streamtxt}>    
-              {documentToReactComponents(data.contentfulEvent.eventDescription.json)}
-              </div>
               {/* <div className={bodyStyles.streambtnCataloge}>
                 <button className="buttonW"><p>ARTIST CATALOGUE</p></button>
               </div>  */}
