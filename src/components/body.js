@@ -55,13 +55,13 @@ function Body() {
         eventVideoLink
         eventDate
       }
-
       contentfulSupporters {
         supportersImage {
           fluid (quality: 100) {
             ...GatsbyContentfulFluid
           }
         }
+      supportTheArtistsButton
       }
 
       now01: file(relativePath: {eq: "thenow_00.jpg"}) {
@@ -282,7 +282,7 @@ function Body() {
               data-sal-duration="800"
               data-sal-easing="ease">
                 <a href="https://www.facebook.com/greekfringe/" target="_blank" rel="noreferrer"><button className={bodyStyles.free} type="button" aria-label="Watch Live Stream on GFF's Facebook"><p>WATCH LIVE STREAM</p></button></a>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=3ZJLZ3S8RVZGU&fbclid=IwAR027R_4eoRzUoFzXcfEhtuTK94kVvF1u0M1KvAtbkqvHptMCrMXl01xSYg" target="_blank" rel="noreferrer"><button className="buttonOrange" type="button" aria-label="Support Artist">SUPPORT THE ARTISTS</button>
+                <a href={data.contentfulEvent.supportTheArtistsButton} target="_blank" rel="noreferrer"><button className="buttonOrange" type="button" aria-label="Support Artist">SUPPORT THE ARTISTS</button>
                 </a> 
               </div>              
 
