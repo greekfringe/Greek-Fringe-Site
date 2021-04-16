@@ -1074,7 +1074,7 @@ function Body() {
               data-sal="slide-up"
               data-sal-delay="300"
               data-sal-duration="700"
-              data-sal-easing="ease">Kon Karamountzos</h3>
+              data-sal-easing="ease">Niko Plaskasovitis</h3>
               <p>Audiovisual Production</p>
             </div>
             <div className={bodyStyles.teamimg}>
