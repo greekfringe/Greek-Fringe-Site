@@ -120,7 +120,7 @@ function Body() {
           }
         }
       }
-      t05: file(relativePath: {eq: "team_05.jpg"}) {
+      t05: file(relativePath: {eq: "team_07.jpg"}) {
         id
         childImageSharp {
           fluid (quality: 100){
@@ -1070,20 +1070,20 @@ function Body() {
 
           <div>
             <div className={bodyStyles.teamtitle}>
-              <h3
+              <a href="https://www.instagram.com/nikoplaskas/"></a><h3
               data-sal="slide-up"
               data-sal-delay="300"
               data-sal-duration="700"
-              data-sal-easing="ease">Kon Karamountzos</h3>
+              data-sal-easing="ease">Niko Plaskasovitis</h3>
               <p>Audiovisual Production</p>
             </div>
             <div className={bodyStyles.teamimg}>
               <Img 
                 fluid = {data.t05.childImageSharp.fluid}  
-                alt="Kon Karamountzos portrait"
+                alt="Niko Plaskasovitis portrait"
               />
             </div>
-            <p>Kon has worked in media for years and is considered part man, part legend with all things production. This guy is responsible for the editing of all the slick videos you see on our site and the crisp sound and visuals that will bless your senses at our future events. His passions include well-tuned instruments, sonic chaos and a well-earned drink after a day in the production coal mines.</p>
+            <p>Niko Plaskasovitis is an emerging artist and creative producer who lives and works on Gadigal Land. He’s responsible for the editing of all the slick videos you see on our site. You’ll occasionally find him mixing music in intimate settings or experimenting with sweet ingredients for a cake conspiracy. Niko is currently completing his Bachelor of Media Art at UNSW Art and Design.</p>
           </div>
 
           <div>
