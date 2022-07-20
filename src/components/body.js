@@ -272,23 +272,23 @@ function Body() {
             </div>
           </div>
           
-            <div className={bodyStyles.streaminfo}> 
-              <div className={bodyStyles.time}>
-              {data.contentfulEvent.eventDate}
-              </div>
-              <div className={bodyStyles.streambtn}
-              data-sal="slide-up"
-              data-sal-delay="300"
-              data-sal-duration="800"
-              data-sal-easing="ease">
-                <a href="https://www.facebook.com/greekfringe/" target="_blank" rel="noreferrer"><button className={bodyStyles.free} type="button" aria-label="Watch Live Stream on GFF's Facebook"><p>WATCH LIVE STREAM</p></button></a>
-                <a href={data.contentfulEvent.supportTheArtistsButton} target="_blank" rel="noreferrer"><button className="buttonOrange" type="button" aria-label="Support Artist">SUPPORT THE ARTISTS</button>
-                </a> 
-              </div>              
+//             <div className={bodyStyles.streaminfo}> 
+//               <div className={bodyStyles.time}>
+//               {data.contentfulEvent.eventDate}
+//               </div>
+//               <div className={bodyStyles.streambtn}
+//               data-sal="slide-up"
+//               data-sal-delay="300"
+//               data-sal-duration="800"
+//               data-sal-easing="ease">
+//                 <a href="https://www.facebook.com/greekfringe/" target="_blank" rel="noreferrer"><button className={bodyStyles.free} type="button" aria-label="Watch Live Stream on GFF's Facebook"><p>WATCH LIVE STREAM</p></button></a>
+//                 <a href={data.contentfulEvent.supportTheArtistsButton} target="_blank" rel="noreferrer"><button className="buttonOrange" type="button" aria-label="Support Artist">SUPPORT THE ARTISTS</button>
+//                 </a> 
+//               </div>              
 
-              {/* <div className={bodyStyles.streambtnCataloge}>
-                <button className="buttonW"><p>ARTIST CATALOGUE</p></button>
-              </div>  */}
+//               {<div className={bodyStyles.streambtnCataloge}>
+//                 <button className="buttonW"><p>ARTIST CATALOGUE</p></button>
+//               </div> }
 
             </div>
             
