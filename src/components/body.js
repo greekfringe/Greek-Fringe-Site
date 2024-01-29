@@ -272,7 +272,7 @@ function Body() {
             </div>
           </div>
           
-            {/* <div className={bodyStyles.streaminfo}> 
+            <div className={bodyStyles.streaminfo}> 
               <div className={bodyStyles.time}>
               {data.contentfulEvent.eventDate}
               </div>
@@ -290,7 +290,7 @@ function Body() {
                 <button className="buttonW"><p>ARTIST CATALOGUE</p></button>
               </div> }
 
-            </div> */}
+            </div>
             
         </div>
       </div>
