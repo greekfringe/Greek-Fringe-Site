@@ -1,2 +1,5 @@
+[build]
+  command = "NODE_OPTIONS='--openssl-legacy-provider' gatsby build"
+
 [[plugins]]
   package = "@netlify/plugin-gatsby"
