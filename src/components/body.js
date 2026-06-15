@@ -1276,7 +1276,7 @@ function Body() {
               data-sal-duration="800"
               data-sal-easing="ease"
             />
-            <p> © 2019 Greek Fringe Fest Pty Ltd. All rights reserved. </p>
+            <p> © 2026 Greek Fringe Fest Pty Ltd. All rights reserved. </p>
           </div>
         </div>
       </div>
