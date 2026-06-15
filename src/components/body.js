@@ -1064,39 +1064,6 @@ function Body() {
           <div className={bodyStyles.textWithLines}>OUR TEAM</div>
 
           <div className={bodyStyles.team}>
-            <div>
-              <div className={bodyStyles.teamtitle}>
-                <h3
-                  data-sal="slide-up"
-                  data-sal-delay="300"
-                  data-sal-duration="600"
-                  data-sal-easing="ease"
-                >
-                  Con Kalamaras
-                </h3>
-                <p>Co-founder &amp; Director</p>
-              </div>
-              <div className={bodyStyles.teamimg}>
-                <Img
-                  fluid={data.t01.childImageSharp.fluid}
-                  alt="Con Kalamaras portrait"
-                />
-              </div>
-              <p>
-                Professional insomniac, Con spends every waking hour thinking
-                about Greek Fringe and is constantly throwing ideas at Christina
-                (his partner in crime) as they shape and mould the Festival into
-                something exciting, fresh and evolving. Con is a
-                first-generation Greek events producer/ curator/ practitioner
-                based in Melbourne. His world circulates around art projects,
-                concerts, and festivals including the Melbourne Rebetiko
-                Festival. He lives and breathes music, producing radio and is
-                seen to obsess over records and rare recordings. When not
-                playing music, he juggles his life between the city and the
-                country and is the proud owner of two chickens both called Greg
-                and his cat, Minion Sassy Pants.
-              </p>
-            </div>
 
             <div>
               <div className={bodyStyles.teamtitle}>
@@ -1157,37 +1124,6 @@ function Body() {
                 aspects of Modern Greek cultures. He can often be seen rummaging
                 through dusty boxes of records in junk shops, swearing that he
                 will not end up as a hoarder.
-              </p>
-            </div>
-
-            <div>
-              <div className={bodyStyles.teamtitle}>
-                <h3
-                  data-sal="slide-up"
-                  data-sal-delay="300"
-                  data-sal-duration="600"
-                  data-sal-easing="ease"
-                >
-                  Vasilki Tsouka
-                </h3>
-                <p>Content Producer | Performance</p>
-              </div>
-              <div className={bodyStyles.teamimg}>
-                <Img
-                  fluid={data.t04.childImageSharp.fluid}
-                  alt="Vasilki Tsouka portrait"
-                />
-              </div>
-              <p>
-                Vasiliki Tsouka is an arts manager and a dramaturg based in
-                Melbourne. We are thrilled to have her on board as she has her
-                finger on the pulse of performance art throughout the world.
-                Since she was a young girl growing up in Athens, Greece, she has
-                always loved art, literature and theatre, passions that she
-                carries into her professional career. Though having lived in
-                Melbourne the past five years, she keeps her connection to
-                Greece by listening to Rebetiko while cooking her Grandmother’s
-                recipes.
               </p>
             </div>
 
