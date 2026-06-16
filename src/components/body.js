@@ -1159,38 +1159,38 @@ function Body() {
 
             <div>
               <div className={bodyStyles.teamtitle}>
-                <a href="mailTo:info@overduestudio.co">
+                <a href="mailTo:hello@toolongstudio.com">
                   <h3
                     data-sal="slide-up"
                     data-sal-delay="300"
                     data-sal-duration="800"
                     data-sal-easing="ease"
                   >
-                    Overdue Studio
+                    Toolong Studio
                   </h3>
                 </a>
                 <p>Visual Design / Web Development</p>
               </div>
               <div className={bodyStyles.teamimg}>
-                <a href="mailTo:info@overduestudio.co">
+                <a href="mailTo:hello@toolongstudio.com">
                   <Img
                     fluid={data.t06.childImageSharp.fluid}
-                    alt="Overdue Studio portrait"
+                    alt="Toolong Studio portrait"
                   />
                 </a>
               </div>
               <p>
-                Overdue Studio is a visual design studio creating thoughtful
+                Toolong Studio is a visual design studio creating thoughtful
                 design solutions digitally and physically. From concept and
                 design to realisation, the studio offers a full creative service
                 in photography, branding, print, digital, object and exhibition
-                design. It is Overdue Studio’s honour to collaborate with Greek
+                design. It is Toolong Studio’s honour to collaborate with Greek
                 Fringe, together they promote music and culture with creativity
                 and authenticity.
                 <br />
                 <b>
-                  <a href="mailTo:info@overduestudio.co">
-                    Contact Overdue Studio for design enquiries.
+                  <a href="mailTo:hello@toolongstudio.com">
+                    Contact Toolong Studio for design enquiries.
                   </a>
                 </b>
               </p>
